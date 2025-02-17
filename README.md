@@ -1,4 +1,4 @@
-# Sogang
+# Sogang University
 
 This Repo contains different materials of mine.
 
