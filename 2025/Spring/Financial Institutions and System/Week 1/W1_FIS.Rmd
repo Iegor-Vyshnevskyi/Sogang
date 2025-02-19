@@ -108,6 +108,8 @@ class: inverse, center, middle
 
 - **Meeting Venue and Time**: UPD | Fri. | 9:30-12:15 
 
+- **Office Hours**: W10-12, Thu10-12, F2-4 or by appointment
+
 
 ---
 
@@ -167,6 +169,16 @@ Some Info:
 
 - *Hobbies*: research, martial arts, cycling, etc.
 ]
+
+---
+
+# Our TA
+
+*Name*: Tran Thuy Van Khang (Ms Ivy)
+
+*Email*: tranthuyvankhang2812000@gmail.com
+
+*Office hours*: TBU
 
 ---
 
@@ -338,7 +350,7 @@ class: my-one-page-font-table
 | **Week&nbsp;12** | Aggregate Demand and Supply Analysis. Monetary Policy Theory.                                                                         |
 | **Week&nbsp;13** | The Role of Expectations in Monetary Policy. Transmission Mechanisms of Monetary Policy.                                              |
 | **Week&nbsp;14** | ESG and Sustainable Finance: The Role of Financial Institutions in Promoting Sustainability.                                       |
-| **Week&nbsp;15** | Current Issues on Challenges and Risks in the Modern Financial System.                                                                |
+| **Week&nbsp;15** | Current Issues on Challenges and Risks in the Modern Financial System. *Student presentations*                                        |
 | **Week&nbsp;16** | **Final Exam**                                                                                                                         |
 
 Tentative schedule. It may be adjusted based on class background and progress.  
