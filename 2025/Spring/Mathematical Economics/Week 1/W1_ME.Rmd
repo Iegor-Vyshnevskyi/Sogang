@@ -1,5 +1,5 @@
 ---
-title: "Mathematical Economics"
+title: "Mathematical Methods for International Commerce "
 subtitle: "<br/>Lecture 1/1: Introduction"
 author: "Iegor Vyshnevskyi, Ph.D."
 institute: "Sogang University"
@@ -76,6 +76,32 @@ style_mono_accent(
 )
 ```
 
+# Quick Icebreaker
+
+On a scale from 1️⃣ (😱) to 5️⃣ (😍), how do you feel about math?
+
+Please vote [here](https://www.menti.com/alsc9heenkri).
+
+
+---
+
+# Math in Our Life?
+
+<div style="display: flex; justify-content: center; align-items: center;">
+
+  <div style="flex: 1; text-align: center;">
+    <img src="math1.jpg" style="max-width: 80%; height: auto;">
+  </div>
+
+  <div style="flex: 1; text-align: center;">
+    <img src="math0.jpg" style="max-width: 60%; height: auto;">
+  </div>
+
+</div>
+
+.center[**Source:** Internet Memes]
+
+---
 
 # Agenda
 
@@ -83,7 +109,7 @@ style_mono_accent(
 
 2. Course Overview
 
-3. What is Mathematical Economics?
+3. What is Mathematical Methods for International Commerce ?
 
 ---
 
@@ -96,7 +122,7 @@ class: inverse, center, middle
 
 ## Course Information
 
-- **Course Title**: Mathematical Economics
+- **Course Title**: Mathematical Methods for International Commerce 
 
 - **Course Credit**: 3
 
@@ -106,7 +132,10 @@ class: inverse, center, middle
 
 - **Semester**: Spring 2025 
 
-- **Meeting Venue and Time**: UPD | Wed./Fri. | 13:30-14:45 
+- **Meeting Venue and Time**: J202 | W/F | 13:30-14:45 | 5 min break
+
+- **Office Hours**: J721, W10-12, Thu10-12, F15-17 or by appointment
+
 
 
 ---
@@ -126,12 +155,22 @@ class: inverse, center, middle
 
 ---
 
+# Our TA
+
+*Name*: Alessia Binda
+
+*Email*: alessiabinda18@gmail.com
+
+*Office hours*: before quizzes and exams
+
+---
+
 ## About me
 
 .pull-left[
 Hello! My name is **.green[Iegor]**.
 
-- Assistant Professor [(link)](TBU), Sogang University
+- Assistant Professor [(link)](https://elic.sogang.ac.kr/lic.en/lic_en_01_04_05.html), Sogang University
 
 - Ph.D. (Public Policy), KDIS (ROK, 2022)
 
@@ -153,7 +192,7 @@ Some Info:
 
 - email: ievysh@sogang.ac.kr
 
-- office: TBU
+- office: J721
 
 - [Google Scholar](https://scholar.google.com/citations?hl=en&user=4Kcp5WoAAAAJ)
 
@@ -163,10 +202,21 @@ Some Info:
 
 - [GitHub](https://github.com/Iegor-Vyshnevskyi)
 
+- [My page](https://iegor-vyshnevskyi.github.io/)
+
 - *Research interests*: central banking, computational data science
 
 - *Hobbies*: research, martial arts, cycling, etc.
 ]
+
+---
+
+
+# Disclaimer
+
+- This is my first course with Sogang, so I will likely be making changes as we go
+
+- Please check the course website regularly for updates
 
 ---
 
@@ -228,32 +278,17 @@ By the end of this course, students will be able to:
 
 ---
 
-# The course in a nutshell
+# The Course in a Nutshell
 
-1. Mathematics basics (needed minimum for economics)
+- **Mathematical Foundations** – Learn the essential math skills needed for economics.  
 
-2. Practical implication (class & home assignments)
+- **Hands-On Learning** – Apply concepts through class activities and home assignments. 
 
----
-
-# Math in Our Life?
-
-<div style="display: flex; justify-content: center; align-items: center;">
-
-  <div style="flex: 1; text-align: center;">
-    <img src="math1.jpg" style="max-width: 80%; height: auto;">
-  </div>
-
-  <div style="flex: 1; text-align: center;">
-    <img src="math0.jpg" style="max-width: 60%; height: auto;">
-  </div>
-
-</div>
-
-.center[**Source:** Internet Memes]
+- **Supportive Environment** – A safe space to ask questions, discuss, and learn from mistakes. 
+ 
+- **Beyond the Classroom** – Adjust to school life, understand Korean culture, and connect with classmates, seniors, and professors.  
 
 ---
-
 
 # Broad coverage
 
@@ -334,7 +369,7 @@ More details on each item you will get down the road.
 
 - **Class Policy**: No photos or videos allowed; lecture slides are provided before class.  
 
-- **Communication**: Use CLASSUM for discussions and Q&A. Engage early to benefit from collective knowledge. Private questions are allowed. Details will be provided in the first class.
+- **Communication**: Use LMS for discussions and Q&A. Engage early to benefit from collective knowledge. Private questions are allowed. Details will be provided in the first class.
 
 
 ---
@@ -369,7 +404,7 @@ Tentative schedule. It may be adjusted based on the class background and progres
 # General things
 
 - **Our Goals**:
-   - to learn the basics of Mathematical Economics
+   - to learn the basics of Mathematical Methods for International Commerce 
    - to apply the knowledge in real-life scenarios
    - see that *Math* is .green[fun] :-)
 
@@ -391,25 +426,17 @@ Tentative schedule. It may be adjusted based on the class background and progres
 
 - Feel free to approach me before or after our class
 
-- **Office hours**: W10-12, Thu10-12, F2-4  or by appointment. You are welcome to discuss course-related issues and questions, career plans, etc.
+- **Office hours**: J721, W10-12, Thu10-12, F3-5  or by appointment. You are welcome to discuss course-related issues and questions, career plans, etc.
 
-- Check / use **CLASSUM** (incl. messages in-there)
+- Check / use **LMS** (incl. messages in-there)
 
 - **Emailing policy**: email me to set up a one-to-one meeting or in the case of some urgent issues.
-   - Please indicate the course name in the subject line and the issue (e.g., *[Mathematical Economics]* Meeting request)
+   - Please indicate the course name in the subject line and the issue (e.g., *[Mathematical Methods for International Commerce ]* Meeting request)
    
    - Please write at least two times when you would like to meet and a brief description (1-2 sentence) why you want to meet up with me
    
    - I may not reply on time (so email me in advance)
 
-
----
-
-# Disclaimer
-
-- This is my first course with Sogang, so I will likely be making changes as we go
-
-- Please check the course website regularly for updates
 
 ---
 
@@ -432,6 +459,16 @@ Tentative schedule. It may be adjusted based on the class background and progres
 3. Be active in class (don't miss and do in-class activities)
 
 4. "The best way to learn ... is to stay on top of it as you go along. The worst way is to cram the night before exams." (c)
+
+---
+
+# Study Suggestions
+
+## How to succeed in this course?
+
+<div style="flex: 1; text-align: center;">
+    <img src="math3.jpg" style="max-width: 30%; height: auto;">
+  </div>
 
 ---
 
@@ -513,11 +550,11 @@ Please use some online speech/voice translation tools to help you like [Online V
 
 class: inverse, center, middle
 
-# 3. What Is Mathematical Economics?
+# 3. What Is Mathematical Methods for International Commerce?
 
 ---
 
-# Why Mathematical Economics?
+# Why Mathematical Methods for International Commerce?
 
 <div>
 .center[<img src="math2.jpg" height="55%" width="55%">]
@@ -528,7 +565,7 @@ Source: Internet meme
 
 ---
 
-# What is Mathematical Economics?
+# What is Mathematical Methods for International Commerce?
 
 - The use of mathematical methods to **understand and solve economic problems**.
 
@@ -539,7 +576,7 @@ Source: Internet meme
 
 ---
 
-# Why study Mathematical Economics?
+# Why study Mathematical Methods for International Commerce?
 
 - *Clarity & Precision* – Translates economic concepts into clear, logical models.
 
@@ -553,7 +590,7 @@ Source: Internet meme
 
 ---
 
-# Why study Mathematical Economics?
+# Why study Mathematical Methods for International Commerce?
 
 **For example:**
 
