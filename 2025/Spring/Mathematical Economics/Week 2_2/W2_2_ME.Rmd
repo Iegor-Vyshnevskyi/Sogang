@@ -350,6 +350,47 @@ ggplot() +
 
 ---
 
+# **Your Turn: Practice Problem**
+
+Given the **demand and supply functions** for one good:
+
+**Demand Function:**
+$$
+Q_d = 50 - 2P
+$$
+
+**Supply Function:**
+$$
+Q_s = -10 + 3P
+$$
+
+1. **Find the equilibrium price** $P^*$ and **quantity** $Q^*$.
+2. **Plot the demand and supply functions**.
+3. **Show the equilibrium point**.
+
+---
+
+# **Your Turn: Practice Problem** (cont)
+
+Given the **demand and supply functions** for one good:
+
+**Demand Function:**
+$$
+Q_d = 40 - 7P
+$$
+
+**Supply Function:**
+$$
+Q_s = -30 + 4P
+$$
+
+1. **Find the equilibrium price** $P^*$ and **quantity** $Q^*$.
+2. **Plot the demand and supply functions**.
+3. **Show the equilibrium point**.
+
+
+---
+
 # **Multi-Commodity Market Equilibrium**
 
 In **multi-commodity markets**, equilibrium is determined by **simultaneously solving multiple demand and supply equations**.
@@ -362,7 +403,7 @@ In **multi-commodity markets**, equilibrium is determined by **simultaneously so
 
 ---
 
-# **Example: Two-Commodity Market**
+# **Two-Commodity Market Equilibrium**
 
 Consider an economy with **two goods** where:
 
@@ -382,42 +423,81 @@ Q_{s2} &= 5 + 2P_2
 \end{aligned}
 $$
 
-+ **Find the equilibrium prices** $P_1^*$ and $P_2^*$.
+**Find the equilibrium prices** $P_1^*$ and $P_2^*$.
 
 ---
 
-# **Setting Up the Equations**
+# **Step 1: Rearrange into Standard Form**
 
-At equilibrium:
-
-$$
-\begin{aligned}
-Q_{d1} = Q_{s1}, \quad Q_{d2} = Q_{s2}
-\end{aligned}
-$$
+At **equilibrium**, demand = supply:
 
 $$
 \begin{aligned}
-50 - 2P_1 + P_2 &= -10 + 3P_1 \\
-60 - P_1 - 3P_2 &= 5 + 2P_2
+-5P_1 + P_2 &= -60 \quad (1) \\
+-P_1 - 5P_2 &= -55 \quad (2)
 \end{aligned}
 $$
 
-Rearrange into standard form:
+**Rearranged equations are now in standard form**.
 
-$$
-\begin{aligned}
--2P_1 + P_2 - 3P_1 &= -10 - 50 \\
--P_1 - 3P_2 - 2P_2 &= 5 - 60
-\end{aligned}
-$$
+---
+
+# **Step 2: Solve for $P_2^*$**
+
+Multiply **Equation (2)** by **5**:
 
 $$
 \begin{aligned}
 -5P_1 + P_2 &= -60 \\
--P_1 - 5P_2 &= -55
+-5P_1 - 25P_2 &= -275
 \end{aligned}
 $$
+
+Now subtract:
+
+$$
+(-5P_1 - 25P_2) - (-5P_1 + P_2) = -275 + 60
+$$
+
+$$
+-26P_2 = -215
+$$
+
+$$
+P_2^* = \frac{-215}{-26} = 8.27
+$$
+
+**Equilibrium price for Good 2**: $P_2^* = 8.27$.
+
+---
+
+# **Step 3: Solve for $P_1^*$**
+
+Substituting $P_2 = 8.27$ into **Equation (1)**:
+
+$$
+-5P_1 + 8.27 = -60
+$$
+
+$$
+-5P_1 = -60 - 8.27
+$$
+
+$$
+P_1^* = \frac{-68.27}{-5} = 13.65
+$$
+
+**Equilibrium price for Good 1**: $P_1^* = 13.65$.
+
+---
+
+# **Final Answer**
+
+\[
+\boxed{ P_1^* = 13.65, \quad P_2^* = 8.27 }
+\]
+
+**These are the equilibrium prices where demand equals supply**.
 
 ---
 
@@ -428,6 +508,81 @@ $$
 
 <div style="font-size: 12px; text-align: center; margin-top: 20px;">
 </div>
+
+---
+
+# **Your Turn: Practice Problem**
+
+Solve for equilibrium prices $P_1^*$ and $P_2^*$ in the following two cases.
+
+---
+
+# **Example 1: Two-Commodity Market**
+Consider an economy with **two goods** where:
+
+**Demand Functions:**
+$$
+\begin{aligned}
+Q_{d1} &= 80 - 4P_1 + 2P_2 \\
+Q_{d2} &= 100 - 3P_1 - P_2
+\end{aligned}
+$$
+
+**Supply Functions:**
+$$
+\begin{aligned}
+Q_{s1} &= 20 + 5P_1 \\
+Q_{s2} &= 10 + 4P_2
+\end{aligned}
+$$
+
+**Find the equilibrium prices** $P_1^*$ and $P_2^*$ by solving:
+
+$$
+\begin{aligned}
+80 - 4P_1 + 2P_2 &= 20 + 5P_1 \\
+100 - 3P_1 - P_2 &= 10 + 4P_2
+\end{aligned}
+$$
+
+---
+
+# **Example 2: Alternative Market System**
+A different economy has the following market equations:
+
+**Demand Functions:**
+$$
+\begin{aligned}
+Q_{d1} &= 60 - 3P_1 + P_2 \\
+Q_{d2} &= 90 - 2P_1 - 2P_2
+\end{aligned}
+$$
+
+**Supply Functions:**
+$$
+\begin{aligned}
+Q_{s1} &= -5 + 4P_1 \\
+Q_{s2} &= 15 + 3P_2
+\end{aligned}
+$$
+
+**Find the equilibrium prices** $P_1^*$ and $P_2^*$ by solving:
+
+$$
+\begin{aligned}
+60 - 3P_1 + P_2 &= -5 + 4P_1 \\
+90 - 2P_1 - 2P_2 &= 15 + 3P_2
+\end{aligned}
+$$
+
+---
+
+# **Instructions**
+- **Rearrange equations** into standard form \( Ax + By = C \).
+
+- **Use elimination or substitution** to solve.
+
+- **Interpret the results**: What do the equilibrium prices mean for the market?
 
 ---
 
@@ -549,7 +704,7 @@ $$
 
 where:
 - \( C \) = Total consumption
-- ($C_0$) = Autonomous consumption (spending even if income is zero)
+- \(C_0) = Autonomous consumption (spending even if income is zero)
 - \( c \) = Marginal propensity to consume (MPC) (i.e., how much of each extra unit of income is consumed)
 - \( Y \) = National income
 
@@ -582,7 +737,7 @@ $$
 
 where:
 - \( S \) = **Total savings**
-- ($S_0$) = **Autonomous savings** (can be negative if dissaving occurs)
+- \(S_0) = **Autonomous savings** (can be negative if dissaving occurs)
 - \( s \) = **Marginal propensity to save (MPS)** (i.e., how much of each extra unit of income is saved)
 - \( Y \) = **National income**
 
@@ -738,6 +893,30 @@ $$
 
 ---
 
+# **Your Turn: Practice Problem**
+
+Given the following information:
+
+$$
+G = 50, \quad I = 60, \quad C = 0.7Y_d + 30, \quad T = 0.15Y + 10
+$$
+
+Find the **equilibrium level of national income** $Y^*$.
+
+---
+
+# **Summary**
+
+1. **Supply and Demand Analysis** helps us understand market equilibrium.
+
+2. **Transposition of Formulae** allows us to solve for unknown variables in economic models.
+
+3. **National Income Determination** helps us find equilibrium GDP in macroeconomic models.
+
+**Math is powerful—and fun!**
+
+---
+
 # Next Steps
 
 1. Practice **problems from the textbook** (Jacques 10ed, Sections 1.5-1.7). 
@@ -753,20 +932,19 @@ $$
   - Chapter 1.6: Exercise 1.6, Problem 5 (p. 92)
   - Chapter 1.7: Exercise 1.7, Problem 6 and 7 (p. 106)
 
-**Math is powerful—and fun!** 
-
-
 ---
 
 class: inverse, center, middle
 
 # Any QUESTIONS?
 
+## Thank you for your attention!
+
 ---
 
 # Next Class
 
-- (Mar 14) Supply and Demand Analysis (1.5), Transposition of Formulae (1.6), National Income Determination (1.7) 
+- (Mar 19) Quadratic Functions (2.1), Revenue, Cost, and Profit (2.2)  
 
 
 
