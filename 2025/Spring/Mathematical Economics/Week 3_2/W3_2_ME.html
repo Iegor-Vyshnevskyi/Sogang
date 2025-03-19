@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Mathematical Methods for International Commerce</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Iegor Vyshnevskyi, Ph.D." />
+    <meta name="date" content="2025-03-21" />
+    <script src="libs/header-attrs-2.28/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Mathematical Methods for International Commerce
+]
+.subtitle[
+## <br/>Week 3/2: Indices and Logarithms, Exponential and Natural Log Functions
+]
+.author[
+### Iegor Vyshnevskyi, Ph.D.
+]
+.institute[
+### Sogang University
+]
+.date[
+### March 21, 2025
+]
+
+---
+
+
+&lt;style&gt;
+@media print{
+  body, html, .remark-slides-area, .remark-notes-area {
+    height: 100% !important;
+    width: 100% !important;
+    overflow: visible;
+    display: inline-block;
+    }
+&lt;/style&gt;
+
+&lt;style type="text/css"&gt;
+.remark-slide-content {
+    font-size: 34px;
+    padding: 1em 4em 1em 4em;
+}
+&lt;/style&gt;
+
+&lt;style type="text/css"&gt;
+.my-one-page-font {
+  font-size: 28px;
+}
+&lt;/style&gt;
+
+&lt;/style&gt;
+
+&lt;style type="text/css"&gt;
+.my-one-page-font-table {
+  font-size: 24px;
+}
+&lt;/style&gt;
+
+
+
+
+
+
+
+## Introduction
+
+- **Why do we study these?**
+  - Indices and logarithms are fundamental for understanding **economic growth**, **inflation**, and **interest rates**.
+
+  - Logarithmic scales simplify **financial data analysis**.
+
+  - Exponential functions describe **compounding interest** and **population growth**.
+
+  - Natural log functions are essential for **continuous growth models**.
+
+---
+
+class: inverse, center, middle
+
+# Indices and Logarithms
+
+---
+# **Section 1: Indices and Exponents**
+
+## **1.1 Understanding Indices**
+
+*Indices* are used to represent **repeated multiplication**.
+
+*Exponents* show the **number of times** a base is multiplied by itself.
+
+
+- The general form of an **exponential expression**:
+
+  $$ a^n $$
+
+  where:
+  - **a** is the base - the number being multiplied
+  - **n** is the exponent or index - the number of times the base is multiplied by itself
+
+**Examples:**
+
+  - `\(2^3 = 2 	\times 2 	\times 2 = 8\)`
+  - `\(10^{-2} = \frac{1}{10^2} = 0.01\)`
+
+---
+# **Section 1: Indices and Exponents** (cont'd)
+### **1.2 Rules of Indices**
+
+1. **Multiplication Rule**:
+  $$ a^m \times a^n = a^{m+n} $$
+
+2. **Division Rule**:
+  $$ \frac{a^m}{a^n} = a^{m-n} $$
+
+3. **Power Rule**:
+  $$ (a^m)^n = a^{mn} $$
+
+4. **Zero Power Rule**:
+  $$ a^0 = 1 $$
+
+5. **Fractional Exponents**:
+  $$ a^{1/n} = \sqrt[n]{a} $$
+
+---
+# **Section 1: Indices and Exponents** (cont'd)
+### **1.2 Rules of Indices** (cont'd)
+
+##### **Examples: Laws of Indices**
+
+**Example:** Simplify `\(2^3 \times 2^2\)`
+
+$$
+ 2^3 \times 2^2 = 2^{3+2} = 2^5 = 32 
+$$
+
+**Example:** Evaluate `\(2^4 \div 2^2\)`
+
+$$
+ 2^4 \div 2^2 = 2^{4-2} = 2^2 = 4 
+$$
+
+**Example:** Solve `\(3^x = 81\)`
+
+$$
+ 3^x = 81 = 3^4 \Rightarrow x = 4 
+$$
+
+
+---
+
+# **Your Turn: Practice Problems**
+
+1. **Simplify:** `\(5^3 \times 5^{-1}\)`
+
+2. **Evaluate:** `\(3^4 \div 3^2\)`
+
+3. **Solve:** `\(2^x = 16\)`
+
+4. **Find:** `\(\sqrt[3]{64}\)`
+
+5. **Use Indices:** Solve `\(10^{2x} = 1000\)`
+
+
+---
+
+# **Section 2: Logarithms**
+
+## **2.1 Definition of Logarithms**
+
+*Logarithms* show the **exponent** to which a base must be raised to produce a given number.
+
+The logarithm is the **inverse** of exponentiation:
+
+$$ \log_a(x) = y \quad \text{if and only if} \quad a^y = x $$
+
+**Examples:**
+
+  - `\(\log_2 8 = 3\)` because `\(2^3 = 8\)`
+  - `\(\log_{10} 1000 = 3\)` because `\(10^3 = 1000\)`
+
+---
+# **Section 2: Logarithms** (cont'd)
+
+### **2.2 Logarithm Rules**
+
+1. **Multiplication Rule**:
+  $$ \log_b(xy) = \log_b x + \log_b y $$
+
+2. **Division Rule**:
+  $$ \log_b(\frac{x}{y}) = \log_b x - \log_b y $$
+
+3. **Power Rule**:
+  $$ \log_b(x^c) = c \log_b x $$
+
+**Example:**
+
+$$ 
+\log_2(4 \times 8) = \log_2 4 + \log_2 8 = 2 + 3 = 5 
+$$
+
+---
+
+# **Your Turn: Practice Problems**
+
+1. **Simplify:** `\(\log_2 32\)`
+
+2. **Evaluate:** `\(\log_3 81\)`
+
+3. **Solve:** `\(\ln(x) = 2\)`
+
+4. **Find:** The value of `\(\log_2 16\)`
+
+5. **Use Logs:** Solve `\(e^{2x} = 10\)`
+
+---
+
+class: inverse, center, middle
+
+# Exponential and Natural Logarithmic Functions
+
+---
+
+# **Section 3: Exponential and Natural Logarithmic Functions**
+
+## **What Are Exponential and Natural Logarithmic Functions?**
+
+- **Exponential Functions** describe **growth and decay** in economics, finance, and science.
+  - Example: **Compound interest, inflation, population growth**.
+  - General form:
+    $$ y = a e^{bx} $$
+    where:
+    - \( e \) is Euler’s number (~2.718) - constant number, the base of the natural logarithm.
+    - \( a \) is the initial value
+    - \( b \) determines growth (+) or decay (-).
+
+---
+
+# **Section 3: Exponential and Natural Logarithmic Functions** (cont'd)
+
+## **What Are Exponential and Natural Logarithmic Functions?** (cont'd)
+
+- **Natural Logarithm Functions** help analyze **percent changes and elasticities**.
+  - Used in **logarithmic transformations of economic data**.
+  - Inverse of exponential function:
+    $$ \ln(y) = x \quad 	ext{if} \quad e^x = y $$
+
+**Why Important?**
+- Used in financial modeling (continuous interest rates, risk analysis).
+- Logarithmic scales simplify large economic datasets.
+
+---
+
+# **Section 4: Exponential Growth in Economics**
+
+### **The Number e and Continuous Growth**
+
+The mathematical constant **e** (Euler’s number, `\(e \approx 2.718\)`) is fundamental in continuous growth models:
+
+$$ 
+A = A_0 e^{rt} 
+$$
+
+where:
+- `\(A\)` is the final amount
+- `\(A_0\)` is the initial amount
+- `\(r\)` is the growth rate
+- `\(t\)` is time
+
+**Example:** If $1000 is invested at a 5% continuous interest rate, find the amount after 3 years.
+
+$$ 
+A = 1000 \times e^{0.05 \times 3} \approx 1161.83 
+$$
+
+---
+
+## **Section 5: Logarithmic Applications in Economics**
+
+### **Elasticity of Demand and Supply**
+
+Elasticity is defined as:
+
+$$ 
+E = \frac{dQ}{dP} \times \frac{P}{Q} $$
+
+Taking logarithms:
+
+$$ \log Q = \log a + b \log P 
+$$
+
+where $ b$ represents the price elasticity.
+
+**Example:** If demand follows `\(Q = 200P^{-0.5}\)`, then:
+
+$$ \log Q = \log 200 - 0.5 \log P 
+$$
+
+$$ E = -0.5 $$ (inelastic demand) - when the price of a good or service goes up, consumers' buying habits stay about the same, and when the price goes down, consumers' buying habits also remain unchanged.
+
+---
+
+## **Section 6: Solving Logarithmic Equations**
+
+**Example 1:** Solve `\(2^x = 16\)`
+
+$$ x = \log_2(16) = 4 
+$$
+
+**Example 2:** Solve `\(\ln(x) = 2\)`
+
+$$ x = e^2 \approx 7.39 
+$$
+
+---
+
+## **Visualizing Exponential and Logarithmic Functions**
+
+&lt;div&gt;
+.center[&lt;img src="p1.png" height="60%" width="60%"&gt;]
+&lt;/div&gt;
+
+- **Top Left:** `\(y = 2^x\)` (Exponential Growth)
+- **Top Right:** `\(y = \log_2(x)\)` (Logarithmic Function)
+- **Bottom Left:** `\(y = e^x\)` (Natural Exponential Growth)
+- **Bottom Right:** `\(y = \ln(x)\)` (Natural Logarithm)
+
+---
+
+## **Practice Problems**
+
+1. **Simplify:** `\(5^3 \times 5^{-1}\)`
+
+2. **Evaluate:** `\(\log_2(32)\)`
+
+3. **Solve:** `\(10^x = 1000\)`
+
+4. **Find:** The elasticity of demand if `\(Q = 250P^{-0.8}\)`.
+
+5. **Use Logs:** Solve `\(e^{2x} = 10\)`.
+
+---
+
+## **Summary**
+1. **Indices and logarithms** simplify economic modeling.
+
+2. **Exponential growth** explains interest rates, inflation, and GDP.
+
+3. **Logarithmic transformations** help interpret financial data.
+
+4. **Euler’s number** is key in continuous growth models.
+
+
+---
+
+## **Discussion Questions**
+1. Why do economists use logarithms for large financial data?
+
+2. How does exponential growth affect debt accumulation?
+
+3. What is the significance of the natural logarithm in finance?
+
+???
+
+1. Answer: Logarithms simplify large datasets and make data analysis easier.
+
+2. Answer: Exponential growth can lead to rapid debt accumulation due to compounding interest.
+
+3. Answer: The natural logarithm is used to analyze continuous growth models and interest rates.
+
+
+---
+
+class: inverse, center, middle
+
+# Any QUESTIONS?
+
+## Thank you for your attention!
+
+---
+
+# Next Class
+
+- (Mar 26) Percentages (3.1), Compound Interest (3.2)    
+
+
+
+
+???
+1. To print pdf slides
+https://stackoverflow.com/questions/54968311/xaringan-export-slides-to-pdf-while-preserving-formatting
+
+pagedown::chrome_print("W1_ME.html") # but not all pictures are visible
+
+2. Option: https://stackoverflow.com/questions/54968311/xaringan-export-slides-to-pdf-while-preserving-formatting
+
+install.packages("remotes")
+remotes::install_github("jhelvy/xaringanBuilder")
+remotes::install_github("jhelvy/renderthis@v0.0.9")
+
+library(xaringanBuilder)
+build_pdf("DVC.html")
+
+3. Option
+writeBin(as.raw(c()), "favicon.ico") # create an empty favicon.ico file
+install.packages("renderthis")
+remotes::install_github('rstudio/chromote')
+library(renderthis)
+
+renderthis::to_pdf("W3_2_ME.html")
+
+getwd()
+setwd("C:/Users/Iegor/OneDrive - kdis.ac.kr/Documents/GitHub/Sogang/2025/Spring/Mathematical Economics/Week 3_2")
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
