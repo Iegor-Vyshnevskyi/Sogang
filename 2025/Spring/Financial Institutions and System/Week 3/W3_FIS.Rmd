@@ -360,7 +360,7 @@ class: inverse, center, middle
 
 # Next Class
 
-- (Mar 28) Chapt. 4: The Meaning of Interest Rates (video lecture and 'class' assignment will be provided)
+- (Mar 28) Chapt. 4: The Meaning of Interest Rates
 
 
 
