@@ -1,0 +1,362 @@
+---
+title: "Mathematical Methods for International Commerce "
+subtitle: "<br/>Week 4/2:  Geometric Series and Investment Appraisal"
+author: "Iegor Vyshnevskyi, Ph.D."
+institute: "Sogang University"
+date: "March 28, 2025"
+output:
+  xaringan::moon_reader:
+    #css: [default, metropolis, metropolis-fonts]
+    css: xaringan-themer.css
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+<style>
+@media print{
+  body, html, .remark-slides-area, .remark-notes-area {
+    height: 100% !important;
+    width: 100% !important;
+    overflow: visible;
+    display: inline-block;
+    }
+</style>
+
+<style type="text/css">
+.remark-slide-content {
+    font-size: 34px;
+    padding: 1em 4em 1em 4em;
+}
+</style>
+
+<style type="text/css">
+.my-one-page-font {
+  font-size: 28px;
+}
+</style>
+
+</style>
+
+<style type="text/css">
+.my-one-page-font-table {
+  font-size: 24px;
+}
+</style>
+
+
+```{r setup, include = FALSE}
+library(tidyverse)
+library(knitr)
+
+opts_chunk$set(fig.width = 10, 
+               message = FALSE, 
+               warning = FALSE,
+               echo = FALSE)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+#install.packages("xaringanthemer")
+library(xaringanthemer)
+style_mono_accent(
+  base_color = "#1c5253",
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Montserrat", "500", "550i"),
+  code_font_google   = google_font("Fira Mono"),
+  colors = c(
+  red = "#f34213",
+  purple = "#3e2f5b",
+  orange = "#ff8811",
+  green = "#136f63",
+  white = "#FFFFFF"
+)
+)
+```
+
+# Why This Topic Matters
+
+Understanding **geometric series** and **investment appraisal** is crucial in economics and finance:
+
+- **Geometric series** model regular payments, compounding, and amortization schedules
+
+- **Investment appraisal** tools help evaluate project viability, return potential, and loan value
+
+- Core to decisions in **banking, government budgeting, business strategy, and personal finance**
+
+- Equips you to analyze time-based value of money, compare alternatives, and manage risk
+
+> “A dollar today is worth more than a dollar tomorrow — let’s understand why.”
+
+---
+
+class: inverse, center, middle
+
+# Section 3.3: Geometric Series
+
+---
+
+## What is a Geometric Progression?
+
+A **geometric sequence** has the form:
+
+$$
+a, ar, ar^2, ar^3, \dots
+$$
+
+Where:
+- $a$ = first term
+- $r$ = common ratio (can be fraction or negative)
+
+Basically, each term is the previous term multiplied by the common ratio.
+
+## Example: $2, 4, 8, 16, 32$
+
+$a = 2, r = 2$
+
+---
+
+## Sum of a Finite Geometric Series
+
+$$
+S_n = a \cdot \frac{1 - r^n}{1 - r}, \quad r \ne 1
+$$
+
+- Example: $5 + 10 + 20 + 40$  
+$a = 5, r = 2, n = 4$
+
+$$
+S_4 = 5 \cdot \frac{1 - 2^4}{1 - 2} = 5 \cdot \frac{-15}{-1} = 75
+$$
+
+---
+
+## Example: Regular Savings Plan
+
+Annual deposit: $100, interest = 5%, duration = 5 years
+
+It means that each year, you save $100 and earn 5% interest.
+
+$$
+S_5 = 100 \cdot \frac{1.05^5 - 1}{0.05} \approx 100 \cdot 5.526 = \boxed{\$552.60}
+$$
+
+In 5 years, you will have saved $552.60.
+
+---
+
+## Your turn! Calculate the Sum
+
+- Find the sum of the following geometric series:
+
+$$
+2 + 4 + 8 + 16 + 32
+$$
+
+$$
+3 + 6 + 12 + 24 + 48
+$$
+
+- Find the final Savings Plan amount for $200/year, 4% interest, 10 years
+
+---
+
+## Example: Loan Repayment by Instalments
+
+Loan = $2000, repaid in 4 annual instalments at 10%
+
+$$
+x \cdot \left( \frac{1 - (1.10)^{-4}}{0.10} \right) = 2000
+$$
+
+Solve for $x$ to find equal annual instalments.
+
+$$
+x = 2000 \cdot \frac{0.4641}{0.10} \approx 928.20
+$$
+
+---
+
+## Your turn! Calculate the Instalments
+
+- A loan of $5000 is repaid in 5 annual instalments at 8%. Find the annual instalment.
+
+
+- A loan of $3000 is repaid in 3 annual instalments at 6%. Find the annual instalment.
+
+---
+
+class: inverse, center, middle
+
+# Section 3.4: Investment Appraisal
+
+---
+
+## Investment Appraisal
+
+Stands for evaluating the financial viability of investments.
+
+## Present Value (Discrete)
+
+- Present value $PV$ is the current value of future cash flows.
+
+$$
+PV = \frac{A}{(1 + r)^n}
+$$
+
+- $1000$ in 3 years at 6%:
+
+$$
+PV = \frac{1000}{1.06^3} \approx 839.62
+$$
+
+---
+
+## Present Value (Continuous)
+
+$$
+PV = A \cdot e^{-rt}
+$$
+
+- $1000$ in 3 years at 6%:
+
+$$
+PV = 1000 \cdot e^{-0.18} \approx 836.00
+$$
+
+### What's the difference between discrete and continuous?
+
+- **Discrete**: Values occur at specific intervals (e.g., yearly, monthly).  
+  Example: Annual interest compounding.
+
+- **Continuous**: Values change smoothly over time, modeled using exponential functions.  
+  Example: Continuous compounding of interest.
+
+---
+
+## Net Present Value (NPV)
+
+- Net present value $NPV$ is the sum of present values of cash flows.
+
+$NPV = -C_0 + \sum_{t=1}^n \frac{C_t}{(1 + r)^t}$
+
+- Example: Cost = $2000, Returns = $800/year for 3 years, $r = 10\%$:
+
+$$
+NPV \approx -2000 + \frac{800}{1.10} + \frac{800}{1.10^2} + \frac{800}{1.10^3} \approx 75.13
+$$
+
+---
+
+## Present Value of an Annuity
+
+- Annuity is a series of equal payments over time.
+
+$$
+PV = PMT \cdot \frac{1 - (1 + r)^{-n}}{r}
+$$
+
+- $1000/year for 5 years at 6%:
+
+$$
+PV = 1000 \cdot \frac{1 - (1.06)^{-5}}{0.06} \approx 4212.40
+$$
+
+---
+
+## Internal Rate of Return (IRR)
+
+- IRR is the rate at which NPV = 0.
+
+- We calculate IRR to compare investment options.
+
+Find $r$ such that $NPV = 0$:
+
+$$
+0 = -C_0 + \sum \frac{C_t}{(1 + r)^t}
+$$
+
+Solve numerically or using software.
+
+---
+
+## Present Value of Government Bonds
+
+Bond pays $50/year for 10 years, plus $1000 at end.
+
+$$
+PV = \sum_{t=1}^{10} \frac{50}{(1.05)^t} + \frac{1000}{(1.05)^{10}} \approx 925.81
+$$
+
+---
+
+# Practice Problems
+
+1. Sum of: $3 + 6 + 12 + 24$
+
+2. $200/quarter, 4% quarterly compounding for 3 years
+
+3. PV of $1500 in 2 years at 8% (continuous)
+
+4. NPV: $3000 cost, $1200/year for 3 years, 7% rate
+
+5. PV of $500 annuity for 6 years at 5%
+
+6. IRR: $2000 cost, $500/year for 5 years
+
+---
+
+# Summary
+
+- Geometric series = finance modeling
+
+- Investment tools = PV, NPV, IRR
+
+- Practical for decision-making in public/private sectors
+
+---
+
+class: inverse, center, middle
+
+# Any QUESTIONS?
+
+## Thank you for your attention!
+
+---
+
+# Next Class
+
+- (April 2) The Derivative of Functions (4.1), Rules of Differentiation (4.2) 
+
+# Next Friday (April 4) - Quiz #1
+
+- Please review your Home Work #1, in-class problems and problems from the textbook. 
+
+
+???
+1. To print pdf slides
+https://stackoverflow.com/questions/54968311/xaringan-export-slides-to-pdf-while-preserving-formatting
+
+pagedown::chrome_print("W1_ME.html") # but not all pictures are visible
+
+2. Option: https://stackoverflow.com/questions/54968311/xaringan-export-slides-to-pdf-while-preserving-formatting
+
+install.packages("remotes")
+remotes::install_github("jhelvy/xaringanBuilder")
+remotes::install_github("jhelvy/renderthis@v0.0.9")
+
+library(xaringanBuilder)
+build_pdf("DVC.html")
+
+3. Option
+writeBin(as.raw(c()), "favicon.ico") # create an empty favicon.ico file
+install.packages("renderthis")
+remotes::install_github('rstudio/chromote')
+library(renderthis)
+
+renderthis::to_pdf("W4_2_ME.html")
+
+getwd()
+setwd("C:/Users/Iegor/OneDrive - kdis.ac.kr/Documents/GitHub/Sogang/2025/Spring/Mathematical Economics/Week 4_2")

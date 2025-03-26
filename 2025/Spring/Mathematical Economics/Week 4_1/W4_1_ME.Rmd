@@ -3,7 +3,7 @@ title: "Mathematical Methods for International Commerce "
 subtitle: "<br/>Week 4/1: Percentages and Compound Interest "
 author: "Iegor Vyshnevskyi, Ph.D."
 institute: "Sogang University"
-date: "March 21, 2025"
+date: "March 26, 2025"
 output:
   xaringan::moon_reader:
     #css: [default, metropolis, metropolis-fonts]
