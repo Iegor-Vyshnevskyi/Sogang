@@ -136,10 +136,37 @@ $$
 ### **Example:**
 
 - If the interest rate increases from 5% to 6%:
-  - This is a **1% increase** or **100 bps increase**.
+
+  - This is a 1 percentage point (p.p.) increase
+
+  - Also referred to as a 100 basis points (bps) increase
 
 - If the interest rate increases from 5% to 7%:
-  - This is a **2% increase** or **200 bps increase**.
+
+  - This is a 2 percentage points (p.p.) increase
+
+  - Also equivalent to a 200 basis points (bps) increase
+
+---
+## **Bps and Percentage Points** (Cont'd)
+
+## Important Clarification
+
+A 1 percentage point (p.p.) increase is not the same as a 1% increase.
+
+Why does this matter?
+
+1 percentage point refers to a change in absolute percentage (e.g., from 5% to 6%).
+
+A 1% increase refers to a relative change (e.g., 5% increases by 1% → 5.05%).
+
+- Example:
+
+From 5% to 6% → +1 p.p.
+
+5% × 1% = 0.05% → +0.05% increase
+
+This distinction is crucial in interpreting inflation, interest rate, or growth rate changes.
 
 ---
 

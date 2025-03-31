@@ -177,6 +177,69 @@ $$
 x = 2000 \cdot \frac{0.4641}{0.10} \approx 928.20
 $$
 
+Good job: it's a wrong answer!
+
+---
+
+class: my-one-page-font
+
+## Example: Loan Repayment by Instalments (continued)
+
+### Correct Calculation
+
+We use the **Present Value of an Ordinary Annuity** formula:
+
+$$
+PV = x \cdot \frac{1 - (1 + r)^{-n}}{r}
+$$
+
+PS: we have $-n$ power because we are calculating the present value of future payments.
+
+$$
+(1 + r)^{-n} = \frac{1}{(1 + r)^n}
+$$
+
+This tells us:
+
+- **Raising to a negative power** means **discounting** — calculating the **present value** of a future amount.
+- It reflects how **$1 received in the future is worth less today**.
+
+
+#### Substitute known values:
+- $PV = 2000$
+- $r = 0.10$
+- $n = 4$
+
+---
+
+# Step-by-Step Solution
+
+**Step 1:** Plug values into the formula:
+
+$$
+2000 = x \cdot \frac{1 - (1.10)^{-4}}{0.10}
+$$
+
+$$
+(1.10)^{-4} = \frac{1}{1.4641} \approx 0.6830
+$$
+
+$$
+\Rightarrow \frac{1 - 0.6830}{0.10} = \frac{0.3170}{0.10} = 3.170
+$$
+
+---
+
+# Step 2: Solve for $x$
+
+Now solve:
+
+$$
+2000 = x \cdot 3.170 \Rightarrow x = \frac{2000}{3.170} \approx \boxed{631.23}
+$$
+
+So your **annual repayment** is **$631.23**.
+
 ---
 
 ## Your turn! Calculate the Instalments
@@ -248,6 +311,19 @@ $$
 NPV \approx -2000 + \frac{800}{1.10} + \frac{800}{1.10^2} + \frac{800}{1.10^3} \approx 75.13
 $$
 
+Good job - this answer is wrong!
+
+---
+
+# Correct Calculation
+
+$$
+= -2000 + 727.27 + 661.16 + 601.06 = \boxed{-10.51}
+$$
+
+So, the project has a **negative NPV** of about **–$10.51**, meaning **it's not financially viable** at a 10% discount rate.
+
+
 ---
 
 ## Present Value of an Annuity
@@ -289,6 +365,18 @@ Bond pays $50/year for 10 years, plus $1000 at end.
 $$
 PV = \sum_{t=1}^{10} \frac{50}{(1.05)^t} + \frac{1000}{(1.05)^{10}} \approx 925.81
 $$
+
+Good job - this answer is wrong!
+
+---
+
+## Correct Calculation
+
+$$
+PV = \sum_{t=1}^{10} \frac{50}{(1.05)^t} + \frac{1000}{(1.05)^{10}} \approx \boxed{1000}
+$$
+
+This makes sense: at a 5% rate, the bond is worth **its face value**.
 
 ---
 
