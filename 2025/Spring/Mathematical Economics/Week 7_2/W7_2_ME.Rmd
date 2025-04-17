@@ -142,6 +142,10 @@ Use when differentiating **functions within functions**.
 - $$ \frac{d}{dx} e^{f(x)} = f'(x) \cdot e^{f(x)} $$
 - $$ \frac{d}{dx} \ln(f(x)) = \frac{f'(x)}{f(x)} $$
 
+- In fact, to be precise, we first differentiate the outer function, keeping the inner function untouched,
+then multiply by the derivative of the inner function.
+- Although, mathematicaly, you will get same result, if you first differentiate the inner function and then multiply by the outer function.
+
 These rules are essential in **economic models** involving growth, decay, and elasticity.
 
 ---
@@ -221,6 +225,8 @@ Where:
 - $Q(t)$ is output (e.g., capital, population)
 - $A$ is initial value
 - $r$ is the growth rate
+- $t$ is time
+- $e$ is the base of natural logarithm
 
 ---
 
@@ -240,11 +246,59 @@ Used in modeling:
 
 ---
 
+# Example: Elasticity of Growth
+
+
+### Model:
+$$ Q(t) = 1000 \cdot e^{0.03t} $$  
+- Capital stock in billions  
+- Initial value \( A = 1000 \)  
+- Growth rate \( r = 0.03 \) (3% annually)
+
+---
+
+### Step 1: Instantaneous Growth Rate
+
+Differentiate:
+$$
+\frac{dQ}{dt} = 1000 \cdot 0.03 \cdot e^{0.03t} = 0.03Q(t)
+$$
+
+At \( t = 5 \):
+$$
+Q(5) = 1000 \cdot e^{0.15} \approx 1161.83 \\
+\frac{dQ}{dt}\bigg|_{t=5} = 0.03 \cdot 1161.83 \approx \boxed{34.85}
+$$
+
+**Interpretation**:  
+- At $t = 5$, capital is growing at a rate of **34.85 units per year**, or **3% of its size**, consistent with exponential growth.
+
+---
+
+### Step 2: Elasticity of Growth
+
+### Elasticity Formula:
+$$
+E = \frac{\frac{dQ}{dt}}{Q} = \frac{0.03Q}{Q} = \boxed{0.03}
+$$
+
+### Interpretation
+
+- Elasticity of growth is **constant**: $E = 0.03$ 
+- Output grows at a **constant rate of 3% per unit of time**  
+- Common in models of:
+  - Population growth  
+  - Compound interest  
+  - Inflation-adjusted returns
+
+---
 
 # Summary
 
 - Exponential and log functions are common in **growth, interest, decay** models
+
 - Chain rule is crucial when inside other functions
+
 - Product and quotient rules still apply!
 
 > Exponentials capture **compounding**; logs help **linearize** growth patterns.
@@ -301,7 +355,7 @@ $$
 
 
 
-## 🔹 2. Product Rule
+## 2. Product Rule
 
 ### (a) $y = x e^{3x}$
 
@@ -315,7 +369,7 @@ $$
 
 
 
-## 🔹 3. Quotient Rule
+## 3. Quotient Rule
 
 ### (a) $y = \frac{e^x}{x^3}$
 
@@ -331,7 +385,7 @@ $$
 
 
 
-## 🔹 4. Application: Revenue Growth
+## 4. Application: Revenue Growth
 
 ### Given: $R(t) = 12000e^{0.04t}$
 
@@ -339,7 +393,7 @@ $$
 R'(t) = 12000 \cdot 0.04 \cdot e^{0.04t} = 480 e^{0.04t}
 $$
 
-### ✅ Interpretation:
+### Interpretation:
 
 The **rate of change of revenue** is proportional to the current revenue level.  
 This reflects **exponential growth** – each year, revenue grows faster.
@@ -424,7 +478,7 @@ class: inverse, center, middle
 # Derivatives & Optimization
 
 - Power rule: $\frac{d}{dx} x^n$
-- Product & chain rule
+- Product & chain rule, other rules
 - Find:
   - Marginal Revenue/Cost
   - When MR = MC
@@ -435,13 +489,13 @@ class: inverse, center, middle
 # Elasticity
 
 - Arc elasticity:
-\[
+$$
 E_d = \frac{\Delta Q / \text{avg } Q}{\Delta P / \text{avg } P}
-\]
+$$
 - Point elasticity:
-\[
+$$
 E_d = \frac{dQ}{dP} \cdot \frac{P}{Q}
-\]
+$$
 - Know how elasticity affects revenue
 
 ---
@@ -473,7 +527,7 @@ class: inverse, center, middle
 - (April 25) Mid term exam (in class):
   - Review all material from the beginning of the semester
   - Pay attention to the examples in the slides, HW #1, Quiz #1 and the exercises in the textbook
-
+- (April 30) Functions of Several Variables (5.1) 
 
 ???
 1. To print pdf slides
