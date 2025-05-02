@@ -499,7 +499,7 @@ class: my-one-page-font
 
 ---
 
-## .center[<img src="fig1.jpg" height="60%" width="60%">]
+.center[<img src="fig1.jpg" height="60%" width="60%">]
 
 **Figure**: Sequence of events in EM crises
 
