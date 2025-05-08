@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Mathematical Methods for International Commerce</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Iegor Vyshnevskyi, Ph.D." />
+    <meta name="date" content="2025-05-09" />
+    <script src="libs/header-attrs-2.28/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Mathematical Methods for International Commerce
+]
+.subtitle[
+## <br/>Week 10/2: Unconstrained Optimization (5.4)
+]
+.author[
+### Iegor Vyshnevskyi, Ph.D.
+]
+.institute[
+### Sogang University
+]
+.date[
+### May 09, 2025
+]
+
+---
+
+
+&lt;style&gt;
+@media print{
+  body, html, .remark-slides-area, .remark-notes-area {
+    height: 100% !important;
+    width: 100% !important;
+    overflow: visible;
+    display: inline-block;
+    }
+&lt;/style&gt;
+
+&lt;style type="text/css"&gt;
+.remark-slide-content {
+    font-size: 34px;
+    padding: 1em 4em 1em 4em;
+}
+&lt;/style&gt;
+
+&lt;style type="text/css"&gt;
+.my-one-page-font {
+  font-size: 28px;
+}
+&lt;/style&gt;
+
+&lt;/style&gt;
+
+&lt;style type="text/css"&gt;
+.my-one-page-font-table {
+  font-size: 24px;
+}
+&lt;/style&gt;
+
+
+
+
+
+
+# Why It Matters in Economics &amp; Business
+
+- Optimization helps firms maximize profit by adjusting inputs or pricing.
+
+- It allows for strategic decision-making in pricing, production, and resource allocation.
+
+- Applications in:
+  - Cost minimization (minimizing production costs)
+  - Profit maximization (maximizing revenue)
+  - Price discrimination (optimizing prices in different markets)
+  - Resource allocation (optimizing the use of limited resources)
+  - Risk management (optimizing investment portfolios)
+
+---
+
+# Learning Objectives
+
+By the end of this class, you should be able to:
+
+- Use first-order partial derivatives to find stationary points.
+
+- Use second-order partial derivatives to classify stationary points.
+
+- Maximize the profit of a firm producing two goods.
+
+- Optimize profit for a firm using price discrimination in different markets.
+
+---
+
+# Agenda  
+
+1. Unconstrained Optimization (5.4)
+
+2. Class Activity
+
+---
+
+# Finding Stationary Points
+
+- Our first step is to find the stationary points of a function.
+  - A stationary point is where the first derivative (or partial derivative) is zero.
+- Why? - Because it indicates a potential maximum or minimum.
+- We can find stationary points using the first-order conditions.
+
+For a function of two variables `\(f(x, y)\)`, the first-order partial derivatives are:
+
+$$
+f_x = \frac{\partial f}{\partial x}, \quad f_y = \frac{\partial f}{\partial y}
+$$
+
+Stationary points occur where both derivatives equal zero:
+
+$$
+f_x = 0 \quad \text{and} \quad f_y = 0
+$$
+
+**Example:**  
+Let `\(f(x, y) = 3x^2 - 2xy + y^2\)`  
+1. Calculate `\(f_x\)` and `\(f_y\)`.  
+2. Set `\(f_x = 0\)` and `\(f_y = 0\)` to find the stationary points.
+
+---
+
+# Solution: Stationary Points
+
+1. First-order derivatives:
+
+$$
+f_x = 6x - 2y, \quad f_y = -2x + 2y
+$$
+
+Setting them to zero:
+
+$$
+6x - 2y = 0 \
+-2x + 2y = 0
+$$
+
+Solving simultaneously:
+
+- `\(y = 3x\)`  
+- Substitute `\(y = 3x\)` in the first equation:  
+  `\(6x - 6x = 0\)`  
+
+Stationary point: `\((x, y) = (0, 0)\)`.
+
+It means that at this point, the slope of the function is zero in both directions.
+- This is a candidate for a local maximum, minimum, or saddle point.
+
+---
+
+class: my-one-page-font
+
+# Second-Order Partial Derivatives and Hessian Matrix
+
+To classify the stationary points, we use the second-order partial derivatives:
+
+`\(f_{xx}, f_{yy}, f_{xy}\)`
+
+The determinant of the Hessian matrix `\(D\)` is given by:
+
+`\(D = f_{xx} \cdot f_{yy} - (f_{xy})^2\)`
+
+- If `\(D &gt; 0\)` and `\(f_{xx} &gt; 0\)`: Local Min  
+- If `\(D &gt; 0\)` and `\(f_{xx} &lt; 0\)`: Local Max  
+- If `\(D &lt; 0\)`: Saddle Point  
+- If `\(D = 0\)`: Inconclusive  
+
+Note 1: The second-order conditions are necessary but not sufficient for a maximum or minimum.
+- They help us classify the nature of the stationary point.
+- If `\(D = 0\)`, we cannot conclude anything about the nature of the stationary point.
+- We may need to use higher-order derivatives or other methods to classify the point.
+
+Note 2: The second-order conditions are based on the assumption that the function is twice differentiable.
+- If the function is not twice differentiable, we may need to use other methods to classify the point.
+
+---
+
+class: my-one-page-font
+
+# Second-Order Partial Derivatives and Hessian Matrix (cont'd)
+
+## Hessian Matrix
+
+### What is the Hessian Matrix?
+
+- The Hessian matrix, denoted by `\(H_x\)`, is a square matrix of second-order partial derivatives of a scalar-valued function `\(f(x_1, x_2)\)`.
+- It provides information about the **curvature** of the function and helps in determining the nature of stationary points.
+- The determinant of the Hessian matrix is used to classify stationary points.
+
+### Definition:
+
+$$
+H_x = 
+`\begin{bmatrix}
+\frac{\partial^2 f}{\partial x_1^2} &amp; \frac{\partial^2 f}{\partial x_1 \partial x_2} \\
+\frac{\partial^2 f}{\partial x_1 \partial x_2} &amp; \frac{\partial^2 f}{\partial x_2^2}
+\end{bmatrix}`
+$$
+
+### Explanation:
+- **Diagonal Elements:** Measure the curvature with respect to each variable independently.
+- **Off-Diagonal Elements:** Measure how the function curvature changes when both variables interact.
+
+---
+
+# Second-Order Partial Derivatives and Hessian Matrix (cont'd)
+
+## Hessian Matrix
+
+
+### Why is it Important?
+- The Hessian matrix helps to determine the nature of stationary points:
+  
+  - Positive determinant and positive diagonal elements: **Local minimum**.
+  
+  - Positive determinant and negative diagonal elements: **Local maximum**.
+  
+  - Negative determinant: **Saddle point**.
+  
+  - Zero determinant: **Inconclusive test**.
+
+
+---
+
+# Example: Classification
+
+Continuing from the previous example:
+
+Second-order derivatives:
+
+`\(f_{xx} = 6, \quad f_{yy} = 2, \quad f_{xy} = -2\)`
+
+Determinant:
+
+$$
+D = (6)(2) - (-2)^2 = 12 - 4 = 8
+$$
+
+Since `\(D &gt; 0\)` and `\(f_{xx} &gt; 0\)`, the point `\((0, 0)\)` is a **local minimum**.
+It means that the function has a minimum value at this point.
+- The function is concave (curves inward like the interior of a circle or sphere) up in both directions at this point.
+- The function is increasing in both directions away from this point.
+- The function is "bowl-shaped" at this point.
+- The function has a unique minimum value at this point.
+
+---
+
+# Visualizing the Function
+
+.center[&lt;img src="p2.png" height="30%" width="30%"&gt;]
+
+- The blue regions indicate lower values of z, while the red regions indicate higher values.
+- The shape is not symmetric due to the interaction term -2xy, creating a slanted surface.
+- The plot has a ridge or saddle point where the slope changes direction, indicating points of inflection or mixed concavity.
+
+
+---
+
+# Economic Application (1): Profit Maximization
+
+A firm produces two goods `\(Q_1\)` and `\(Q_2\)` with profit function:
+
+`\(\Pi(Q_1, Q_2) = 200Q_1 + 300Q_2 - 50Q_1^2 - 75Q_2^2 - 30Q_1Q_2\)`
+
+1. Determine the profit-maximizing quantities.
+
+2. Classify the stationary points using the second-order derivatives.
+
+---
+
+# Solution: Profit Maximization
+
+1. First-order derivatives:
+
+$$
+\Pi_{Q_1} = 200 - 100Q_1 - 30Q_2
+$$
+
+$$
+\Pi_{Q_2} = 300 - 150Q_2 - 30Q_1
+$$
+
+Setting to zero:
+
+$$
+200 - 100Q_1 - 30Q_2 = 0 \
+300 - 150Q_2 - 30Q_1 = 0
+$$
+
+Solving simultaneously:
+- `\(Q_1 = 1\)`  
+- `\(Q_2 = 1\)`
+
+---
+# Solution: Profit Maximization (cont'd)
+
+2. Second-order derivatives:
+
+`\(\Pi_{Q_1Q_1} = -100, \quad \Pi_{Q_2Q_2} = -150, \quad \Pi_{Q_1Q_2} = -30\)`
+
+Hessian Determinant:
+
+$$
+D = (-100)(-150) - (-30)^2 = 15000 - 900 = 14100
+$$
+
+Since `\(D &gt; 0\)` and `\(\Pi_{Q_1Q_1} &lt; 0\)`, the point `\((1, 1)\)` is a **local maximum**.
+
+It means that the firm maximizes its profit at this point.
+
+---
+
+# Your turn: Profit Maximization
+
+A firm produces two goods `\(Q_1\)` and `\(Q_2\)` with the following profit function:
+
+$$  
+\Pi(Q_1, Q_2) = 150Q_1 + 250Q_2 - 40Q_1^2 - 60Q_2^2 - 20Q_1Q_2
+$$
+
+### Tasks:
+1. **Determine the profit-maximizing quantities.**  
+2. **Classify the stationary points** using the second-order derivatives.  
+3. **Interpret the economic meaning** of the results.
+
+???
+
+# **Solution: First-Order Derivatives**
+
+1. First-order derivatives:
+
+$$  
+\Pi_{Q_1} = 150 - 80Q_1 - 20Q_2  
+\Pi_{Q_2} = 250 - 120Q_2 - 20Q_1  
+$$
+
+Setting both derivatives to zero:
+
+$$  
+150 - 80Q_1 - 20Q_2 = 0  
+250 - 120Q_2 - 20Q_1 = 0  
+$$
+
+Solving simultaneously:
+- `\(Q_1 = 1.5\)`  
+- `\(Q_2 = 1.5\)`
+
+
+# **Solution: Second-Order Derivatives**
+
+2. Second-order derivatives:
+
+$$  
+\Pi_{Q_1Q_1} = -80, \quad \Pi_{Q_2Q_2} = -120, \quad \Pi_{Q_1Q_2} = -20
+$$
+
+Hessian Determinant:
+
+$$  
+D = (-80)(-120) - (-20)^2 = 9600 - 400 = 9200
+$$
+
+- Since `\(D &gt; 0\)` and `\(\Pi_{Q_1Q_1} &lt; 0\)`, the point `\((1.5, 1.5)\)` is a **local maximum**.
+
+
+
+# **Economic Interpretation**
+- The firm maximizes its profit by producing **1.5 units of each good**.
+- The positive determinant of the Hessian matrix indicates a local maximum.
+- The negative values of the second derivatives indicate that the function is concave down, confirming a maximum.
+
+---
+
+# Your turn: Cost Minimization
+
+A firm produces two goods using two inputs, labor (L) and capital (K), with the following cost function:
+
+$$
+C = 40L + 30K
+$$
+
+The production function is given by:
+
+$$
+Q = L^{0.5}K^{0.5}
+$$
+
+1. **Determine the optimal input combination** to minimize costs given that the firm must produce 100 units of output.
+
+2. **Verify the optimal solution** using the second-order conditions.
+
+3. **Interpret the economic meaning** of the results.
+
+
+???
+
+# ✅ Solution: Cost Minimization
+
+1. **Constraint:**
+
+To produce 100 units:
+
+$$
+Q = L^{0.5}K^{0.5} = 100 \
+L^{0.5}K^{0.5} = 100 \
+L^{0.5}K^{0.5} = 100 \
+L^{0.5} = \frac{100}{K^{0.5}}
+$$
+
+Square both sides:
+
+$$
+L = \frac{100^2}{K}
+$$
+
+???
+
+# ✅ Solution: Cost Minimization (cont'd)
+
+2. **Cost Function:**
+
+Substitute \( L = \frac{100^2}{K} \) into the cost function:
+
+$$
+C = 40L + 30K \
+C = 40\left( \frac{100^2}{K} \right) + 30K \
+C = \frac{400000}{K} + 30K
+$$
+
+Take the first derivative and set to zero:
+
+$$
+\frac{dC}{dK} = -\frac{400000}{K^2} + 30 = 0
+$$
+
+Solve for \( K \):
+
+$$
+30K^2 = 400000 \
+K^2 = \frac{400000}{30} \
+K = \sqrt{\frac{400000}{30}} \approx 115.47
+$$
+
+Now, find \( L \):
+
+$$
+L = \frac{100^2}{115.47} \approx 86.61
+$$
+
+???
+
+# ✅ Verification: Second-Order Condition
+
+1. Second derivatives:
+
+$$
+\frac{d^2C}{dK^2} = \frac{800000}{K^3}
+$$
+
+Since \( \frac{d^2C}{dK^2} &gt; 0 \), the function is **convex**, confirming a minimum point.
+
+The optimal input combination to minimize costs while producing 100 units is **L = 86.61, K = 115.47**.
+
+# Economic Interpretation
+- The firm seeks to **minimize costs** while producing a fixed level of output (100 units).
+- The optimal combination of inputs is **L = 86.61, K = 115.47**.
+- The higher allocation to capital (K) indicates that capital is relatively less expensive per unit than labor.
+- This result can guide the firm in allocating resources effectively, optimizing cost structure, and making strategic production decisions.
+
+
+---
+
+# Summary
+
+- Identified stationary points using first-order conditions.
+
+- Classified points using the second-order derivative test.
+
+- Applied optimization in profit-maximization scenarios.
+
+- Explored applications in price discrimination.
+
+
+
+
+
+
+
+
+
+
+---
+
+class: inverse, center, middle
+
+# 2. Group Activity
+
+
+---
+
+class: inverse, center, middle
+
+# Any QUESTIONS?
+
+## Thank you for your attention!
+
+---
+
+## Next Classes
+
+- (May 14) Constrained Optimization (5.5)
+
+
+???
+1. To print pdf slides
+https://stackoverflow.com/questions/54968311/xaringan-export-slides-to-pdf-while-preserving-formatting
+
+pagedown::chrome_print("W1_ME.html") # but not all pictures are visible
+
+2. Option: https://stackoverflow.com/questions/54968311/xaringan-export-slides-to-pdf-while-preserving-formatting
+
+install.packages("remotes")
+remotes::install_github("jhelvy/xaringanBuilder")
+remotes::install_github("jhelvy/renderthis@v0.0.9")
+
+library(xaringanBuilder)
+build_pdf("DVC.html")
+
+3. Option
+writeBin(as.raw(c()), "favicon.ico") # create an empty favicon.ico file
+install.packages("renderthis")
+remotes::install_github('rstudio/chromote')
+library(renderthis)
+
+renderthis::to_pdf("W10_2_ME.html")
+
+getwd()
+setwd("C:/Users/Iegor/OneDrive - kdis.ac.kr/Documents/GitHub/Sogang/2025/Spring/Mathematical Economics/Week 10_2")
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

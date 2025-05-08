@@ -259,6 +259,74 @@ Used in economic models with **returns to scale**.
 
 4. Verify Euler's theorem for $f(x, y) = x^2 + y^2$
 
+---
+
+class: my-one-page-font
+
+# Problem # 4
+
+### Verify Euler's theorem for $f(x, y) = x^2 + y^2$
+
+We’ll verify Euler’s Theorem for the function:
+$$
+f(x, y) = x^2 + y^2
+$$
+
+#### Step 1: Homogeneity Check
+
+Substitute $tx$ and $ty$ into $f$:
+
+$$
+f(tx, ty) = (tx)^2 + (ty)^2 = t^2x^2 + t^2y^2 = t^2(x^2 + y^2)
+$$
+
+So $f(x, y)$ is homogeneous of **degree 2**.
+
+#### Step 2: Euler’s Theorem
+
+Euler’s Theorem states:
+
+If $f$ is homogeneous of degree $n$, then:
+$$
+f(x, y) = x \cdot f_x + y \cdot f_y
+$$
+For our case, $n = 2$.
+
+
+
+---
+
+class: my-one-page-font
+
+# Problem # 4 (continued)
+
+#### Step 3: Find the Partial Derivatives
+
+$$
+\frac{\partial f}{\partial x} = 2x, \quad \frac{\partial f}{\partial y} = 2y
+$$
+
+Substitute into Euler's identity:
+
+$$
+x \cdot 2x + y \cdot 2y = 2x^2 + 2y^2 = 2(x^2 + y^2) = 2f(x, y)
+$$
+
+Verified! Euler’s Theorem holds.
+
+#### Interpretation: Returns to Scale
+
+Since the function is homogeneous of **degree 2**, it exhibits:
+
+**Increasing Returns to Scale**
+
+> Doubling both inputs will **quadruple** the output.
+
+This concept is used widely in:
+- Production theory
+- Utility and cost functions
+- Growth models
+
 ???
 
 # ✅ Practice Problem 1
