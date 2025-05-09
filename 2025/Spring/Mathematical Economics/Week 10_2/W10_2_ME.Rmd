@@ -306,9 +306,9 @@ $$
 300 - 150Q_2 - 30Q_1 = 0
 $$
 
-Solving simultaneously:
-- $Q_1 = 1$  
-- $Q_2 = 1$
+Solving simultaneously (corrected answer):
+- $Q_1 \approx 1.49$  
+- $Q_2 \approx 1.70$
 
 ---
 # Solution: Profit Maximization (cont'd)
@@ -323,7 +323,7 @@ $$
 D = (-100)(-150) - (-30)^2 = 15000 - 900 = 14100
 $$
 
-Since $D > 0$ and $\Pi_{Q_1Q_1} < 0$, the point $(1, 1)$ is a **local maximum**.
+Since $D > 0$ and $\Pi_{Q_1Q_1} < 0$, the point $(1.49, 1.70)$ is a **local maximum**.
 
 It means that the firm maximizes its profit at this point.
 
@@ -370,8 +370,8 @@ $$
 $$
 
 Solving simultaneously:
-- $Q_1 = 1.5$  
-- $Q_2 = 1.5$
+- $Q_1 = 1.48$  
+- $Q_2 = 1.48$
 
 
 # **Solution: Second-Order Derivatives**
