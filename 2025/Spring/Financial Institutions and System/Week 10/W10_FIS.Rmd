@@ -604,6 +604,8 @@ class: my-one-page-font
 
 ---
 
+class: my-one-page-font
+
 # Summary
 
 - Financial crises can be triggered by various factors, including macroeconomic shocks, financial innovations, and regulatory failures.

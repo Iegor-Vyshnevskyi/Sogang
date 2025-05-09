@@ -318,9 +318,18 @@ Since `\(D &gt; 0\)` and `\(\Pi_{Q_1Q_1} &lt; 0\)`, the point `\((1, 1)\)` is a 
 
 It means that the firm maximizes its profit at this point.
 
+
+
 ---
 
-# Your turn: Profit Maximization
+class: inverse, center, middle
+
+# 2. Group Activity
+
+
+---
+
+# Your turn: Profit Maximization (Group A)
 
 A firm produces two goods `\(Q_1\)` and `\(Q_2\)` with the following profit function:
 
@@ -381,7 +390,7 @@ $$
 
 ---
 
-# Your turn: Cost Minimization
+# Your turn: Cost Minimization (Group B)
 
 A firm produces two goods using two inputs, labor (L) and capital (K), with the following cost function:
 
@@ -429,7 +438,7 @@ $$
 
 2. **Cost Function:**
 
-Substitute \( L = \frac{100^2}{K} \) into the cost function:
+Substitute `\(L = \frac{100^2}{K}\)` into the cost function:
 
 $$
 C = 40L + 30K \
@@ -443,7 +452,7 @@ $$
 \frac{dC}{dK} = -\frac{400000}{K^2} + 30 = 0
 $$
 
-Solve for \( K \):
+Solve for `\(K\)`:
 
 $$
 30K^2 = 400000 \
@@ -451,7 +460,7 @@ K^2 = \frac{400000}{30} \
 K = \sqrt{\frac{400000}{30}} \approx 115.47
 $$
 
-Now, find \( L \):
+Now, find `\(L\)`:
 
 $$
 L = \frac{100^2}{115.47} \approx 86.61
@@ -467,7 +476,7 @@ $$
 \frac{d^2C}{dK^2} = \frac{800000}{K^3}
 $$
 
-Since \( \frac{d^2C}{dK^2} &gt; 0 \), the function is **convex**, confirming a minimum point.
+Since `\(\frac{d^2C}{dK^2} &gt; 0\)`, the function is **convex**, confirming a minimum point.
 
 The optimal input combination to minimize costs while producing 100 units is **L = 86.61, K = 115.47**.
 
@@ -480,30 +489,179 @@ The optimal input combination to minimize costs while producing 100 units is **L
 
 ---
 
-# Summary
+# Your turn: Risk Management: Optimizing Investment Portfolios (Group C)
 
-- Identified stationary points using first-order conditions.
+A firm is investing in two assets, A and B, with the following return function:
 
-- Classified points using the second-order derivative test.
+$$
+R = 0.08x + 0.12y - 0.5(0.06x^2 + 0.09y^2) - 0.04xy
+$$
 
-- Applied optimization in profit-maximization scenarios.
+where:
+- `\(x\)` = Investment in Asset A
+- `\(y\)` = Investment in Asset B
 
-- Explored applications in price discrimination.
+1. **Determine the optimal allocation** between assets A and B to maximize returns.
+2. **Verify the optimal solution** using the second-order conditions.
+3. **Interpret the economic meaning** of the results.
+
+???
+
+# ✅ Solution: First-Order Derivatives
+
+1. First-order derivatives:
+
+$$
+R_x = 0.08 - 0.06x - 0.04y
+$$
+$$
+R_y = 0.12 - 0.09y - 0.04x
+$$
+
+Setting both derivatives to zero:
+
+$$
+0.08 - 0.06x - 0.04y = 0
+$$
+$$
+0.12 - 0.09y - 0.04x = 0
+$$
+
+Solving simultaneously:
+- `\(x = 1\)`  
+- `\(y = 1\)`
 
 
 
+# ✅ Solution: Second-Order Derivatives
+
+2. Second-order derivatives:
+
+$$
+R_{xx} = -0.06, \quad R_{yy} = -0.09, \quad R_{xy} = -0.04
+$$
+
+Hessian Determinant:
+
+$$
+D = (-0.06)(-0.09) - (-0.04)^2 = 0.0054 - 0.0016 = 0.0038
+$$
+
+- Since `\(D &gt; 0\)` and `\(R_{xx} &lt; 0\)`, the point `\((1, 1)\)` is a **local maximum**.
 
 
 
+# 🌟 Economic Interpretation
+- The firm optimizes its investment by allocating **1 unit in both Asset A and Asset B**.
+- The positive determinant of the Hessian matrix confirms a local maximum, indicating that the firm is at an optimal risk-return point.
+- This analysis can assist the firm in **allocating resources effectively** to maximize returns while controlling risk.
+
+---
+
+# Your turn: Price Discrimination: Maximizing Profit in Multiple Markets (Group D)
+
+A monopolist sells a product in two markets, A and B. The revenue functions for each market are:
+
+$$
+R_A = 200Q_A - 5Q_A^2
+$$
+$$
+R_B = 300Q_B - 10Q_B^2
+$$
+
+The cost function for the firm is given by:
+
+$$
+C = 50 + 20(Q_A + Q_B)
+$$
+
+1. Determine the optimal quantities to sell in each market to maximize profit.
+2. Verify the optimal solution using the second-order conditions.
+3. Interpret the economic meaning of the results in the context of price discrimination.
+
+???
+
+# ✅ Solution: First-Order Derivatives
+
+1. First-order derivatives for revenue functions:
+
+For Market A:
+$$
+MR_A = 200 - 10Q_A
+$$
+
+For Market B:
+$$
+MR_B = 300 - 20Q_B
+$$
+
+Cost function derivative:
+$$
+MC = 20
+$$
+
+Setting `\(MR_A = MC\)` and `\(MR_B = MC\)`:
+
+$$
+200 - 10Q_A = 20 \
+300 - 20Q_B = 20
+$$
+
+Solving simultaneously:
+- `\(Q_A = 18\)`
+- `\(Q_B = 14\)`
 
 
+
+# ✅ Solution: Second-Order Derivatives
+
+2. Second-order derivatives:
+
+For Market A:
+$$
+MR_{AA} = -10 &lt; 0
+$$
+
+For Market B:
+$$
+MR_{BB} = -20 &lt; 0
+$$
+
+- Both second derivatives are **negative**, confirming a maximum profit point in both markets.
+
+
+
+# 🌟 Economic Interpretation
+- The firm engages in **price discrimination** by setting different quantities for each market based on differing demand elasticities.
+- Market A has a **lower marginal revenue slope**, indicating a less elastic demand relative to Market B.
+- The firm maximizes profit by selling **18 units in Market A** and **14 units in Market B**, adjusting output based on each market's price sensitivity.
 
 
 ---
 
-class: inverse, center, middle
+class: my-one-page-font
 
-# 2. Group Activity
+# Summary
+
+- **Objective:** Maximize or minimize a function without constraints.
+
+- **First-Order Derivative:** Used to find stationary points (set the derivative to zero).
+
+- **Second-Order Derivative:** Determines the nature of the stationary points:
+  - `\(f''(x) &gt; 0\)`: Local minimum
+  - `\(f''(x) &lt; 0\)`: Local maximum
+
+- **Applications in Economics:**
+  - Cost minimization (input allocation)
+  - Profit maximization (optimal production)
+  - Risk management (investment allocation)
+  - Price discrimination (market segmentation)
+
+- **Key Takeaways:**
+  - Identify objective functions and derive first and second derivatives.
+  - Analyze the Hessian matrix for functions of two variables.
+  - Apply economic interpretations to the mathematical solutions.
+
 
 
 ---
