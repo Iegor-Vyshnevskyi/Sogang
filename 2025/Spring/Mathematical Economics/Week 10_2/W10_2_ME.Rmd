@@ -401,100 +401,77 @@ $$
 
 # Your turn: Cost Minimization (Group B)
 
-A firm produces two goods using two inputs, labor (L) and capital (K), with the following cost function:
+A firm produces two goods using labor (L) and capital (K) with the following cost function:
 
-$$
-C = 40L + 30K
-$$
+$$ C = 40L + 30K $$
 
-The production function is given by:
+The objective is to **minimize the cost** function without any production constraint.
 
-$$
-Q = L^{0.5}K^{0.5}
-$$
-
-1. **Determine the optimal input combination** to minimize costs given that the firm must produce 100 units of output.
-
-2. **Verify the optimal solution** using the second-order conditions.
-
-3. **Interpret the economic meaning** of the results.
+Give economic interpretation of the results.
 
 
 ???
 
-# ✅ Solution: Cost Minimization
+# Solution to Exercise 1: Production Constraint
 
-1. **Constraint:**
+1. If the firm decides to produce 50 units of output, the problem becomes constrained. Suppose the production function is:
 
-To produce 100 units:
+$$ Q = L^{0.5}K^{0.5} $$
 
-$$
-Q = L^{0.5}K^{0.5} = 100 \
-L^{0.5}K^{0.5} = 100 \
-L^{0.5}K^{0.5} = 100 \
-L^{0.5} = \frac{100}{K^{0.5}}
-$$
+The production constraint is:
 
-Square both sides:
+$$ L^{0.5}K^{0.5} = 50 $$
 
-$$
-L = \frac{100^2}{K}
-$$
+Rewriting as:
 
-???
+$$ K = \frac{2500}{L} $$
 
-# ✅ Solution: Cost Minimization (cont'd)
+#---
 
-2. **Cost Function:**
+# Step-by-Step Solution
 
-Substitute $L = \frac{100^2}{K}$ into the cost function:
+**Objective Function:**
 
-$$
-C = 40L + 30K \
-C = 40\left( \frac{100^2}{K} \right) + 30K \
-C = \frac{400000}{K} + 30K
-$$
+$$ C = 40L + 30K $$
 
-Take the first derivative and set to zero:
+Substituting for \( K \):
 
-$$
-\frac{dC}{dK} = -\frac{400000}{K^2} + 30 = 0
-$$
+$$ C = 40L + 30 \left( \frac{2500}{L} \right) $$
 
-Solve for $K$:
+$$ C = 40L + \frac{75000}{L} $$
 
-$$
-30K^2 = 400000 \
-K^2 = \frac{400000}{30} \
-K = \sqrt{\frac{400000}{30}} \approx 115.47
-$$
+**First Derivative:**
 
-Now, find $L$:
+$$ \frac{dC}{dL} = 40 - \frac{75000}{L^2} $$
 
-$$
-L = \frac{100^2}{115.47} \approx 86.61
-$$
+Setting to zero:
 
-???
+$$ 40L^2 = 75000 $$
 
-# ✅ Verification: Second-Order Condition
+$$ L^2 = 1875 $$
 
-1. Second derivatives:
+$$ L = \sqrt{1875} \approx 43.3 $$
 
-$$
-\frac{d^2C}{dK^2} = \frac{800000}{K^3}
-$$
+**Substituting back:**
 
-Since $\frac{d^2C}{dK^2} > 0$, the function is **convex**, confirming a minimum point.
+$$ K = \frac{2500}{43.3} \approx 57.7 $$
 
-The optimal input combination to minimize costs while producing 100 units is **L = 86.61, K = 115.47**.
+#---
+
+# Second Derivative Check
+
+**Second Derivative:**
+
+$$ \frac{d^2C}{dL^2} = \frac{150000}{L^3} > 0 $$
+
+Since the second derivative is positive, we confirm that the solution is a **minimum**.
+
+#---
 
 # Economic Interpretation
-- The firm seeks to **minimize costs** while producing a fixed level of output (100 units).
-- The optimal combination of inputs is **L = 86.61, K = 115.47**.
-- The higher allocation to capital (K) indicates that capital is relatively less expensive per unit than labor.
-- This result can guide the firm in allocating resources effectively, optimizing cost structure, and making strategic production decisions.
 
+- The firm minimizes costs by choosing approximately 43.3 units of labor and 57.7 units of capital.
+- If production requirements change, the optimal combination of inputs will also change.
 
 ---
 

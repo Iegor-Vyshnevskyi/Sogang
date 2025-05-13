@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Mathematical Methods for International Commerce</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Iegor Vyshnevskyi, Ph.D." />
+    <meta name="date" content="2025-05-16" />
+    <script src="libs/header-attrs-2.28/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Mathematical Methods for International Commerce
+]
+.subtitle[
+## <br/>Week 11/2: Lagrange Multipliers (5.6)
+]
+.author[
+### Iegor Vyshnevskyi, Ph.D.
+]
+.institute[
+### Sogang University
+]
+.date[
+### May 16, 2025
+]
+
+---
+
+
+&lt;style&gt;
+@media print{
+  body, html, .remark-slides-area, .remark-notes-area {
+    height: 100% !important;
+    width: 100% !important;
+    overflow: visible;
+    display: inline-block;
+    }
+&lt;/style&gt;
+
+&lt;style type="text/css"&gt;
+.remark-slide-content {
+    font-size: 34px;
+    padding: 1em 4em 1em 4em;
+}
+&lt;/style&gt;
+
+&lt;style type="text/css"&gt;
+.my-one-page-font {
+  font-size: 28px;
+}
+&lt;/style&gt;
+
+&lt;/style&gt;
+
+&lt;style type="text/css"&gt;
+.my-one-page-font-table {
+  font-size: 24px;
+}
+&lt;/style&gt;
+
+
+
+
+
+
+# Why It Matters in Economics &amp; Finance
+
+- **Resource Allocation:** Optimal use of limited resources
+
+- **Cost Minimization:** Firms aim to minimize costs given production constraints
+
+- **Utility Maximization:** Consumers maximize utility given budget constraints
+
+---
+
+# Learning Objectives
+
+- Apply the Lagrange multiplier method to solve constrained optimization problems.
+
+- Interpret the economic meaning of the Lagrange multiplier as the marginal value of the constraint.
+
+- Solve optimization problems involving Cobb-Douglas production functions with cost constraints.
+
+- Demonstrate that at the optimal point, the ratio of marginal product to price is equal for all inputs.
+
+---
+
+# What Are Lagrange Multipliers?
+
+- Lagrange multipliers provide a way to find the **maximum or minimum** of a function subject to a constraint.
+- They are particularly useful in economics for problems involving **cost minimization** or **utility maximization**.
+- The method involves introducing a new variable (the Lagrange multiplier) to incorporate the constraint into the optimization problem.
+
+- For a function `\(f(x, y)\)` subject to a constraint `\(g(x, y) = c\)`, we define the Lagrangian as:
+
+$$
+\mathcal{L}(x, y, \lambda) = f(x, y) + \lambda \cdot (c - g(x, y))
+$$
+
+- The Lagrange multiplier `\(\lambda\)` can be interpreted as the **rate of change of the objective function** with respect to the constraint.
+
+---
+
+# Lagrange Multipliers - Example
+
+### Problem Statement
+
+- Optimize the objective function:
+  $$ f(x, y) = x^2 - 3xy + 12x $$
+
+- Subject to the constraint:
+  $$ 2x + 3y = 6 $$
+
+---
+
+# Step 1: Define the Lagrangian
+
+- The Lagrangian function is given by:
+
+$$
+g(x, y, \lambda) = x^2 - 3xy + 12x + \lambda (6 - 2x - 3y)
+$$
+
+---
+
+# Step 2: Derive First-Order Conditions
+
+- Compute the partial derivatives of `\(g\)`:
+
+$$
+\frac{\partial g}{\partial x} = 2x - 3y + 12 - 2\lambda
+$$
+
+$$
+\frac{\partial g}{\partial y} = -3x - 3\lambda
+$$
+
+$$
+\frac{\partial g}{\partial \lambda} = 6 - 2x - 3y
+$$
+
+Set each of these derivatives to zero to form the system of equations.
+
+---
+
+# Step 3: Form the System of Equations
+
+1. `\(2x - 3y - 2\lambda = -12\)`
+
+2. `\(-3x - 3\lambda = 0\)`
+
+3. `\(2x + 3y = 6\)`
+
+---
+
+# Step 4: Eliminate Variables
+
+- Multiply (1) by 3 and (2) by 2, then add:
+
+$$
+-9y - 12\lambda = -36
+$$
+
+$$
+-6y - 2\lambda = -18
+$$
+
+- Eliminate `\(y\)`:
+
+Multiply (4) by 6 and (5) by 9, then subtract:
+
+$$
+-54\lambda = -54 \implies \lambda = 1
+$$
+
+---
+
+# Step 5: Substitute to Find `\(y\)` and `\(x\)`
+
+- Substitute `\(\lambda = 1\)` in (5):
+
+$$
+-6y - 2(1) = -18
+$$
+
+$$
+-6y = -16 \implies y = \frac{8}{3}
+$$
+
+- Substitute `\(y = \frac{8}{3}\)` and `\(\lambda = 1\)` in (1):
+
+$$
+2x - 3\left(\frac{8}{3}\right) - 2(1) = -12
+$$
+
+$$
+2x - 8 - 2 = -12 \implies x = -1
+$$
+
+---
+
+# Step 6: Calculate Optimal Value
+
+- Optimal solution:
+  - `\(x = -1\)`, `\(y = \frac{8}{3}\)`, `\(\lambda = 1\)`
+
+- Calculate the objective function at the optimal point:
+
+$$
+f(-1, \frac{8}{3}) = (-1)^2 - 3(-1)\left(\frac{8}{3}\right) + 12(-1)
+$$
+
+$$
+= 1 + 8 - 12 = -3
+$$
+
+- Optimal value of the objective function: **-3**
+
+---
+
+# Step 7: Economic Interpretation
+
+- The Lagrange multiplier `\(\lambda\)` represents the **marginal value of the constraint**.
+
+- In this case, it indicates how much the objective function would change if the constraint were relaxed by one unit.
+
+- A positive `\(\lambda\)` suggests that the constraint is binding, meaning that the optimal solution is constrained by the budget.
+
+- A negative `\(\lambda\)` indicates that the constraint is not binding, and the optimal solution is not affected by the constraint.
+
+- The optimal solution `\((x, y)\)` represents the best allocation of resources given the constraint.
+
+- The Lagrange multiplier `\(\lambda\)` provides insight into the trade-offs involved in the optimization problem, helping to understand the sensitivity of the objective function to changes in the constraint.
+
+- In this case, the optimal solution suggests that the firm should allocate resources in a way that maximizes the objective function while adhering to the constraint.
+
+---
+
+# Lagrange Multipliers: Profit Maximization
+
+A monopolistic producer of two goods `\(G_1\)` and `\(G_2\)` has the following cost function:
+
+$$
+TC = 10Q_1 + Q_1Q_2 + 10Q_2
+$$
+
+Demand equations:
+
+$$
+P_1 = 50 - Q_1 + Q_2 $$ 
+
+$$ P_2 = 30 + 2Q_1 - Q_2
+$$
+
+Objective: Maximize profit given the constraint that the total output is 15 units.
+
+---
+
+# Step 1: Formulate the Lagrangian
+
+Objective function (Profit):
+
+$$
+\pi = TR - TC
+$$
+
+Total Revenue:
+
+$$
+TR_1 = (50 - Q_1 + Q_2)Q_1 = 50Q_1 - Q_1^2 + Q_1Q_2
+$$
+
+$$
+TR_2 = (30 + 2Q_1 - Q_2)Q_2 = 30Q_2 + 2Q_1Q_2 - Q_2^2
+$$
+
+Total Revenue:
+
+$$
+TR = 50Q_1 - Q_1^2 + 3Q_1Q_2 + 30Q_2 - Q_2^2
+$$
+
+Profit function:
+
+$$
+\pi = 50Q_1 - Q_1^2 + 3Q_1Q_2 + 30Q_2 - Q_2^2 - (10Q_1 + Q_1Q_2 + 10Q_2)
+$$
+
+Simplify:
+
+$$
+\pi = 40Q_1 - Q_1^2 + 2Q_1Q_2 + 20Q_2 - Q_2^2
+$$
+
+Constraint:
+
+$$
+Q_1 + Q_2 = 15
+$$
+
+Lagrangian:
+
+$$
+L(Q_1, Q_2, \lambda) = 40Q_1 - Q_1^2 + 2Q_1Q_2 + 20Q_2 - Q_2^2 + \lambda (15 - Q_1 - Q_2)
+$$
+
+---
+
+# Step 2: First-Order Conditions
+
+1. Derivative with respect to `\(Q_1\)`:
+
+$$
+\frac{\partial L}{\partial Q_1} = 40 - 2Q_1 + 2Q_2 - \lambda = 0
+$$
+
+2. Derivative with respect to `\(Q_2\)`:
+
+$$
+\frac{\partial L}{\partial Q_2} = 20 + 2Q_1 - 2Q_2 - \lambda = 0
+$$
+
+3. Derivative with respect to `\(\lambda\)`:
+
+$$
+15 - Q_1 - Q_2 = 0
+$$
+
+---
+
+# Step 3: Solving the System
+
+Rewriting the equations:
+
+1. `\(40 - 2Q_1 + 2Q_2 - \lambda = 0\)`
+
+2. `\(20 + 2Q_1 - 2Q_2 - \lambda = 0\)`
+
+3. `\(Q_1 + Q_2 = 15\)`
+
+Adding the first two equations to eliminate `\(\lambda\)`:
+
+$$
+60 - 4Q_1 = 0 \implies Q_1 = 10
+$$
+
+Substituting in the constraint:
+
+$$
+10 + Q_2 = 15 \implies Q_2 = 5
+$$
+
+Optimal output levels: `\(Q_1 = 10\)`, `\(Q_2 = 5\)`
+
+---
+
+# Step 4: Profit Calculation
+
+Substitute `\(Q_1 = 10\)`, `\(Q_2 = 5\)` in the profit function:
+
+$$
+\pi = 40(10) - (10)^2 + 2(10)(5) + 20(5) - (5)^2
+$$
+
+$$
+\pi = 400 - 100 + 100 + 100 - 25 = 475
+$$
+
+---
+
+# Economic Interpretation
+
+- The optimal profit is **475 units**.
+
+- The Lagrange multiplier `\(\lambda = 30\)` represents the **marginal increase in profit** for each additional unit of the constraint (production quota).
+
+- If the quota increases by 1 unit, profit increases by approximately 30 units.
+
+---
+
+# Your turn
+
+# Practice Problem 1: Maximizing $ 2x^2 - xy $
+
+
+Use Lagrange multipliers to optimise
+$$
+2x^2 - xy $$
+
+subject to
+$$
+x + y = 12
+$$
+
+Give economic interpretation of the solution.
+
+???
+
+### Objective:
+Maximize:
+$$ g(x, y, \lambda) = 2x^2 - xy + \lambda (12 - x - y) $$
+
+1. **First-order conditions:**
+- $ g_x = 4x - y - \lambda = 0 $
+- $ g_y = -x - \lambda = 0 $
+- $ g_\lambda = 12 - x - y = 0 $
+
+**Step-by-step solution:**
+- From the second equation: $ -x - \lambda = 0 $ → $ \lambda = -x $
+- Substitute $ \lambda = -x $ into the first equation:
+  $$ 4x - y - (-x) = 0 \implies 5x - y = 0 \implies y = 5x $$
+- Substitute $ y = 5x $ in the third equation:
+  $$ 12 - x - 5x = 0 \implies 6x = 12 \implies x = 2 $$
+- Thus, $ y = 5(2) = 10 $
+
+**Solution:**
+- Optimal values: $ x = 2, y = 10 $
+- Substitute in the objective function:
+  $$ g = 2(2)^2 - (2)(10) = 8 - 20 = -12 $$
+- Interpretation: The optimal output is -12 units.
+
+---
+
+# Practice Problem 2: Utility Maximization
+
+A consumer’s utility function is given by
+$$
+U(x_1, x_2) = 2x_1 x_2 + 3x_1$$`
+
+where `\(x_1\)` and `\(x_2\)` denote the number of items of two goods `\(G_1\)` and `\(G_2\)` that are bought. 
+Each item costs $1 for `\(G_1\)` and $2 for `\(G_2\)`. 
+Use Lagrange multipliers to find the maximum value of `\(U\)` if the consumer’s income is $83. 
+Estimate the new optimal utility if the consumer’s income rises by $1.
+
+
+
+???
+
+### Objective:
+Maximize:
+$$ g(x_1, x_2, \lambda) = 2x_1 x_2 + 3x_1 + \lambda (83 - x_1 - 2x_2) $$
+
+1. **First-order conditions:**
+- $ g_{x_1} = 2x_2 + 3 - \lambda = 0 $
+- $ g_{x_2} = 2x_1 - 2\lambda = 0 $
+- $ g_\lambda = 83 - x_1 - 2x_2 = 0 $
+
+**Step-by-step solution:**
+- From the first equation: $ \lambda = 2x_2 + 3 $
+- Substitute $ \lambda = 2x_2 + 3 $ in the second equation:
+  $$ 2x_1 - 2(2x_2 + 3) = 0 \implies 2x_1 - 4x_2 - 6 = 0 \implies x_1 = 2x_2 + 3 $$
+- Substitute $ x_1 = 2x_2 + 3 $ in the third equation:
+  $$ 83 - (2x_2 + 3) - 2x_2 = 0 \implies 83 - 3x_2 - 3 = 0 \implies 80 = 3x_2 \implies x_2 \approx 26.67 $$
+- Thus, $ x_1 = 2(26.67) + 3 \approx 56.34 $
+
+**Solution:**
+- Optimal values: $ x_1 \approx 56.34, x_2 \approx 26.67 $
+- Interpretation: The optimal utility is achieved when the consumer allocates approximately 56.34 units to G1 and 26.67 units to G2.
+- If income increases by $1, the Lagrange multiplier indicates the marginal utility gain.
+
+---
+
+
+class: inverse, center, middle
+
+# 2. Home work #2
+
+---
+
+# Home work #2
+
+### Homework #2: Submission Details
+
+- **Due Date:** June 13, 2025, before the start of class.
+- **Submission Format:** Submit your solutions as a single PDF file via the Cyber Campus.
+- **Instructions:** 
+  - Clearly show all steps and calculations.
+  - Include explanations for your answers where applicable.
+  - Ensure your submission is neat and well-organized.
+  - Bring any questions to the office hours or email me.
+
+???
+Work on your Home Assignment #2:
+  - Chapter 1.1: Exercise 1.1, Problems 12, 14-16, 19 (p. 21-22)
+  - Chapter 1.2: Exercise 1.2, Problems 9, 11, 14 (p. 39)
+  - Chapter 1.3: Exercise 1.3, Problems 10 and (p. 53-54)
+  - Chapter 1.4: Exercise 1.4, Problem 4 (p. 65)
+  - Chapter 1.5: Exercise 1.5, Problems 3, 5, 8  (p. 81)
+  - Chapter 1.6: Exercise 1.6, Problem 5 (p. 92)
+  - Chapter 1.7: Exercise 1.7, Problem 6 and 7 (p. 106)
+
+Good luck!
+
+
+---
+
+class: inverse, center, middle
+
+# Any QUESTIONS?
+
+## Thank you for your attention!
+
+---
+
+## Next Classes
+
+- (May 16) Lagrange Multipliers (5.6)
+   - Home Work #2 announcement
+
+
+???
+1. To print pdf slides
+https://stackoverflow.com/questions/54968311/xaringan-export-slides-to-pdf-while-preserving-formatting
+
+pagedown::chrome_print("W1_ME.html") # but not all pictures are visible
+
+2. Option: https://stackoverflow.com/questions/54968311/xaringan-export-slides-to-pdf-while-preserving-formatting
+
+install.packages("remotes")
+remotes::install_github("jhelvy/xaringanBuilder")
+remotes::install_github("jhelvy/renderthis@v0.0.9")
+
+library(xaringanBuilder)
+build_pdf("DVC.html")
+
+3. Option
+writeBin(as.raw(c()), "favicon.ico") # create an empty favicon.ico file
+install.packages("renderthis")
+remotes::install_github('rstudio/chromote')
+library(renderthis)
+
+renderthis::to_pdf("W11_2_ME.html")
+
+getwd()
+setwd("C:/Users/Iegor/OneDrive - kdis.ac.kr/Documents/GitHub/Sogang/2025/Spring/Mathematical Economics/Week 11_2")
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
