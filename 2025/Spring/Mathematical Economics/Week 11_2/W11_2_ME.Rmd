@@ -480,9 +480,9 @@ class: inverse, center, middle
 
 ---
 
-# Home work #2
+class: my-one-page-font-table
 
-### Homework #2: Submission Details
+## Homework #2
 
 - **Due Date:** June 13, 2025, before the start of class.
 - **Submission Format:** Submit your solutions as a single PDF file via the Cyber Campus.
@@ -492,15 +492,22 @@ class: inverse, center, middle
   - Ensure your submission is neat and well-organized.
   - Bring any questions to the office hours or email me.
 
-???
-Work on your Home Assignment #2:
-  - Chapter 1.1: Exercise 1.1, Problems 12, 14-16, 19 (p. 21-22)
-  - Chapter 1.2: Exercise 1.2, Problems 9, 11, 14 (p. 39)
-  - Chapter 1.3: Exercise 1.3, Problems 10 and (p. 53-54)
-  - Chapter 1.4: Exercise 1.4, Problem 4 (p. 65)
-  - Chapter 1.5: Exercise 1.5, Problems 3, 5, 8  (p. 81)
-  - Chapter 1.6: Exercise 1.6, Problem 5 (p. 92)
-  - Chapter 1.7: Exercise 1.7, Problem 6 and 7 (p. 106)
+- Work on your Home Assignment #2 (Jacques, 10th edition, Chapters 5-9):
+  - Chapter 5.1: Exercise 5.1, Problem 5 (p. 411)
+  - Chapter 5.2: Exercise 5.2, Problem 7 (p. 427)
+  - Chapter 5.3: Exercise 5.3, Practice Problem inside the chapter (p. 432 only)
+  - Chapter 5.4: Exercise 5.4, Problem 5 (p. 457)
+  - Chapter 5.5: Exercise 5.5, Problems 6 and 7  (p. 467)
+  - Chapter 5.6: Exercise 5.6, Problem 4 (p. 479)
+  - Chapter 6.1: Exercise 6.1, Problem 3 (p. 506)
+  - Chapter 6.2: Exercise 6.2, Problem 6 (p. 521)
+  - Chapter 7.1: Exercise 7.1, Problem 5 (p. 553)
+  - Chapter 7.2: Exercise 7.2, Problem 6 (p. 572)
+  - Chapter 7.3: Exercise 7.3, Problem 5 (p. 584)
+  - Chapter 8.1: Exercise 8.1, Problem 6 (p. 615)
+  - Chapter 8.2: Exercise 8.2, Problem 3 (p. 626)
+  - Chapter 9.1: Exercise 9.1, Problem 4 (p. 655)
+  - Chapter 9.2: Exercise 9.2, Problem 3 (p. 670)
 
 Good luck!
 
