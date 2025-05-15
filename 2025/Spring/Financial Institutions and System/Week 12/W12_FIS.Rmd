@@ -1,6 +1,6 @@
 ---
 title: "Financial Institutions and System"
-subtitle: "<br/>Week 12: Quantity Theory, Inflation, and the Demand for Money.<br/> Aggregate Demand and Supply Analysis."
+subtitle: "<br/>Week 12: Quantity Theory, Inflation, and the Demand for Money."
 author: "Iegor Vyshnevskyi, Ph.D."
 institute: "Sogang University"
 date: "May 16, 2025"
@@ -81,9 +81,7 @@ style_mono_accent(
 
 1. Quantity Theory, Inflation, and the Demand for Money    
 
-2. Aggregate Demand and Supply Analysis 
-
-3. Class Activity
+2. Class Activity
 
 ---
 
@@ -95,332 +93,218 @@ class: inverse, center, middle
 
 # Introduction
 
-**Welcome to the Foreign Exchange Market!**
+### Quantity Theory, Inflation, and the Demand for Money
 
-- How does the exchange rate affect international trade?
+- Identify the factors underlying the portfolio choice theory of money demand.
 
-- What determines exchange rates in the long run and short run?
+- Assess and interpret the empirical evidence on the validity of the liquidity preference and portfolio theories of money demand.
 
-- What role do interest rates play in exchange rate movements?
+- Understand the relationship between money supply, price level, and velocity.
 
----
+.small[Note: recall that liquidity preference theory ( the demand for money is prioritized over other assets. The interest rate in an economy is influenced by the supply of and demand for money.) is a Keynesian approach to money demand, while portfolio theory (investors who make their decisions based solely on expected return (the mean or average return) and volatility (standard deviation) should make rational choices) is a more modern approach.]
 
-# Definition and Importance
-
-.center[
-**What is the Foreign Exchange Market?**
-]
-
-- A market where different currencies are traded.
-
-- Composed of banks, corporations, governments, and traders.
-
-- Major transactions include:
-  - Spot transactions: Immediate exchange of currencies.
-  - Forward transactions: Agreement to exchange currencies at a future date.
-
-- Facilitates international trade and investment by allowing for currency exchange.
-- Influences import/export prices, financial flows, and investment decisions.
-- Affects inflation, interest rates, and economic growth.
 
 ---
 
 class: my-one-page-font
 
-# Size and composition of the FX Market
+# Quantity Theory of Money - Equation of Exchange
 
-.center[<img src="p1.png" height="40%" width="40%">]
-- Average daily turnover increased from $1.5 to $7.5 trillion between 1998 and 2022, with the increase occurring across both FX spot and FX derivatives. [link](https://libertystreeteconomics.newyorkfed.org/2024/01/towards-increasing-complexity-the-evolution-of-the-fx-market/) 
+- The Quantity Theory of Money connects the money supply (M), velocity (V), price level (P), and output (Y).
 
-.small[Source: Liberty Street Economics]
+**Equation of Exchange:**
+
+$$ M \times V = P \times Y $$
+
+- Velocity (V, measures the number of times that one unit of currency is used to purchase goods and services within a given time period) is assumed constant in the short run.
+- Implications:
+  - Changes in money supply (M) lead to proportional changes in price level (P) when output (Y) is constant.
+  - If output is at full employment, changes in money supply affect price level directly.
+
+- If output is flexible, changes in money supply can affect both price level and output.
+- The equation of exchange is a fundamental concept in monetary economics.
+- It provides a framework for understanding the relationship between money supply, price level, and output.
+- It is used to analyze the effects of monetary policy on inflation and economic activity.
+- The equation of exchange is derived from the identity that states that the total amount of money in circulation multiplied by the number of times it is spent equals the total value of goods and services produced in an economy.
+
+---
+
+# Quantity Theory of Money - example
+
+If nominal GDP (PY) is $10 trillion, the money supply (M) is $2 trillion, then:
+- Velocity (V) can be calculated as:
+$$ V = \frac{PY}{M} = \frac{10 \text{ trillion}}{2 \text{ trillion}} = 5 $$
+- This means that each dollar in the money supply is spent 5 times in a year.
+
+- If the money supply (M) increases to $3 trillion, and velocity (V) remains constant, then:
+$$ P \times Y = M \times V $$
+$$ P \times Y = 3 \text{ trillion} \times 5 $$
+
+- If output (Y) is constant at $10 trillion, then:
+$$ P = \frac{3 \text{ trillion} \times 5}{10 \text{ trillion}} = 1.5 $$
+- This means that the price level has increased from 1 to 1.5, indicating inflation.
+
+---
+
+# Quantity Theory of Money - example (cont.)
+
+- Example: If the money supply (M) increases by 10% and velocity (V) is constant, then:
+$$ \%M + \%V = \%P + \%Y $$
+- If velocity (V) is constant, then:
+$$ \%P = \%M - \%Y $$
+- If output (Y) is constant, then:
+$$ \%P = \%M $$
+- If the money supply (M) increases by 10% and output (Y) is constant, then:
+$$ \%P = 10\% $$
+- If the money supply (M) increases by 10% and output (Y) increases by 5%, then:
+$$ \%P = 10\% - 5\% = 5\% $$
+
+- If the money supply (M) increases by 10% and output (Y) decreases by 5%, then:
+$$ \%P = 10\% + 5\% = 15\% $$
 
 
 ---
+
+# Determinants of Velocity
+
+- Velocity (V) is influenced by several factors:
+  - Payment technologies (e.g., credit cards, digital payments)
+  - Financial innovations (e.g., money market funds)
+  - Economic conditions (e.g., inflation, interest rates)
+
+- Changes in velocity can affect the relationship between money supply and price level.
+
+- For example, if velocity increases due to technological advancements, the same money supply can lead to higher output and lower prices.
+- Conversely, if velocity decreases due to economic uncertainty, the same money supply may lead to higher prices and lower output.
+- The determinants of velocity are important for understanding how changes in the money supply can impact the overall economy.
+
+---
+
+# Demand for Money
+- The demand for money is the desire to hold cash or liquid assets for transactions, precautionary, and speculative purposes.
+- The demand for money is influenced by several factors:
+  - Interest rates
+  - Income levels
+  - Inflation expectations
+  - Economic conditions
+
+- The demand for money can be represented by the following equation:
+$$ M_d = f(1/V, Y, P) $$
+- Where:
+  - $M_d$ = demand for money
+  - $V$ = velocity of money
+  - $Y$ = income level
+  - $P$ = price level
+
+---
+
 class: my-one-page-font
 
-# USD dominance in the FX Market
+# Fisher Equation and Money Demand
 
-.center[<img src="p2.png" height="50%" width="50%">]
-- The U.S. dollar (USD) is the most traded currency, accounting for 88% of all FX transactions. [link](https://libertystreeteconomics.newyorkfed.org/2024/01/towards-increasing-complexity-the-evolution-of-the-fx-market/) 
+- Fisher’s interpretation:
+  - Velocity is constant, so:
 
-.small[Source: Liberty Street Economics]
+$$ P \times Y = M \times V $$
 
----
+- Dividing by V:
 
-# UK and US dominance in the FX Market
-.center[<img src="p3.png" height="60%" width="60%">]
-- The UK and US are the two largest FX trading centers, accounting for 38% and 19% of global FX turnover, respectively. [link](https://libertystreeteconomics.newyorkfed.org/2024/01/towards-increasing-complexity-the-evolution-of-the-fx-market/)
-[link](https://libertystreeteconomics.newyorkfed.org/2024/01/towards-increasing-complexity-the-evolution-of-the-fx-market/) 
-.small[Source: Liberty Street Economics]
+$$ M = \frac{P \times Y}{V} $$
 
-
----
-
-# Participants in the FX Market
-
-- Retail Traders
-
-- Commercial Banks
-
-- Central Banks
-
-- Corporations
-
-- Governments
-
-- Investment Banks
-
-- Hedge Funds
-
-.center[
-**Who benefits the most and why?**
-]
+- Money demand is proportional to nominal income (PY).
+- Implications for monetary policy:
+  - If the central bank increases the money supply, it can lead to higher prices or output.
+  - The relationship between money supply and price level is crucial for understanding inflation.
 
 ---
 
-# Key Terminologies
+# Keynesian Theories of Money Demand
 
-- **Exchange Rate (E):** The price of one currency in terms of another.
+- Three motives for holding money:
+  - Transactions Motive
+  - Precautionary Motive
+  - Speculative Motive
 
-- **Spot Exchange Rate:** Rate for immediate exchange.
+**Formula for Money Demand:**
 
-- **Forward Exchange Rate:** Rate for future exchange.
+$$ M_d = f(i, Y) $$
 
-- **Effective Exchange Rate Index:** Weighted average of exchange rates with major trading partners.
-
----
-
-# Spot vs. Forward Exchange Rates
-
-.center[<img src="p4.png" height="70%" width="70%">]
-
-- The dynamic of the spot and forward exchange rates is determined by the interest rate differential between the two currencies involved in the transaction.
-
-
----
-
-# Types of FX Transactions
-
-- **Spot Transactions:** Immediate exchange of currencies at the current rate.
-
-- **Forward Transactions:** Agreement to exchange currencies at a future date.
-
-- **Swaps:** Exchange of currencies and interest rates between two parties.
-
-- **Options:** Contracts granting the right to buy/sell at a specific rate.
-
-.center[
-**Why might a firm prefer a forward over a spot transaction?**
-]
-
----
-# Real vs. Nominal Exchange Rates
-
-**Nominal Exchange Rate (E):** The price of one currency in terms of another.
-
-**Real Exchange Rate (Er):** Adjusts the nominal rate for price level differences.
-
-$$E_r = \frac{E \times P_{HC}}{P_{ROW}}$$
-
-Where:
-- $E$ = Nominal Exchange Rate
-- $P_{HC}$ = Price level in Home Country
-- $P_{ROW}$ = Price level in Rest of the World
+- Demand for money is negatively related to interest rates and positively related to income.
+- Empirical evidence supports the liquidity preference theory, showing that money demand is sensitive to interest rates and income levels.
+- The liquidity preference theory is a Keynesian approach to money demand that emphasizes the role of interest rates in determining the demand for money.
+- It suggests that individuals prefer to hold money for transactions and precautionary purposes, but they also consider the opportunity cost of holding money in terms of foregone interest.
+- The theory posits that the demand for money is inversely related to interest rates, meaning that as interest rates rise, the demand for money decreases.
+- The liquidity preference theory is important for understanding how changes in interest rates can impact the overall economy.
 
 ---
 
-# Example: Real Exchange Rate Calculation
+# Inflation and Quantity Theory
 
-- HC: USA, ROW: Japan
-- Exchange Rate (E): 1.5 yen/USD
-- Price of U.S. wheat: 2 USD per bushel
-- Price of Japanese wheat: 4 yen per bushel
+- Rewriting the quantity equation in percentage change form:
 
-$$ E_r = \frac{1.5 \times 2}{4} = 0.75 $$
+$$ \%M + \%V = \%P + \%Y $$
 
-Interpretation: 1 bushel of U.S. wheat costs 0.75 bushels of Japanese wheat.
+- If velocity is constant:
 
----
+$$ \%P = \%M - \%Y $$
 
-# Purchasing Power Parity (PPP)
-
-- PPP states that identical goods should cost the same in different countries when expressed in a common currency.
-
-$$E \times P = P_{ROW}$$
-
-Example: Big Mac Index
-
-- If a Big Mac costs $5 in the USA and 500 yen in Japan, the implied PPP exchange rate is 500 / 5 = 100 yen/USD.
+- Implications for monetary policy and inflation targeting.
+- If the money supply grows faster than output, it can lead to inflation.
+- If the money supply grows slower than output, it can lead to deflation.
+- The quantity theory of money is a classical economic theory that explains the relationship between the money supply and price levels in an economy.
 
 ---
 
-# Interest Rate Parity (IRP)
+# Budget Deficits and Inflation
 
-- **Interest Parity:** The relationship between interest rates and exchange rates.
+- Financing government deficits:
+  - Taxation
+  - Borrowing
+  - Money Creation (Seigniorage)
 
-- IRP states that the difference in interest rates between two countries is equal to the expected change in exchange rates.
-
-- It ensures that arbitrage opportunities are eliminated.
-
-- IRP connects exchange rates and interest rates across countries.
-
-$$i_{HC} - i_{ROW} = \frac{E(T+1) - E(T)}{E(T)}$$
-
-- If domestic interest rates rise, the currency is expected to appreciate.
-
----
-
-# Wrap-Up and Discussion
-
-- What determines exchange rates in the short run and long run?
-
-- How do interest rates and inflation impact exchange rates?
-
-- How can businesses hedge against exchange rate risks?
-
+- Hyperinflation example: Zimbabwe (2000s).
+- Hyperinflation occurs when there is excessive money supply growth without corresponding economic growth.
+- It leads to a rapid increase in prices, eroding the purchasing power of money.
+- Hyperinflation can result from various factors, including excessive government spending, loss of confidence in the currency, and external shocks.
+- The consequences of hyperinflation include:
+  - Decreased savings and investment
+  - Increased uncertainty and volatility in the economy
+  - Social and political instability
 
 ---
 
-# Closing and Q&A
+# Portfolio Theories of Money Demand
 
-- Key Takeaways:
-  - FX markets are essential for global trade and investment.
-  - Exchange rates are influenced by interest rates, inflation, and market expectations.
-  - PPP and interest parity provide frameworks but have limitations.
+- Factors influencing money demand:
+  - Wealth
+  - Risk
+  - Liquidity of other assets
 
-
-.center[
-**Questions?**
-]
-
----
-class: inverse, center, middle
-
-# 2. The International Financial System
-
----
-
-# Introduction to the International Financial System
-
-- Overview of National Income and Product Accounting in an Open Economy
-
-- Understanding the Balance of Payments
-
-- Role of the International Monetary Fund (IMF)
+- Empirical Evidence: Sensitivity of money demand to interest rates and income levels.
+- Portfolio theories of money demand emphasize the role of risk and return in determining the demand for money.
+- They suggest that individuals hold money as part of a diversified portfolio of assets.
+- The demand for money is influenced by factors such as wealth, risk preferences, and the liquidity of other assets.
+- Empirical evidence supports the idea that money demand is sensitive to interest rates and income levels.
+- The portfolio theories of money demand provide a more comprehensive understanding of the factors that influence individuals' decisions to hold money.
+- They highlight the importance of considering the trade-offs between holding money and other assets in a portfolio context.
+- The portfolio theories of money demand are important for understanding how changes in interest rates and economic conditions can impact the overall demand for money in an economy.
 
 ---
 
-# National Income and Product Accounting for an Open Economy
+# Summary and Review Questions
 
-- Distinguish between GNP and GDP:
+- Review the key concepts and equations.
 
-  - **GNP**: Total value of final goods/services produced using HC-owned factors of production.
-  - **GDP**: Total value of final goods/services produced within the borders of the HC.
+- Application: How does the quantity theory of money help in understanding hyperinflation?
 
-- Key Formula:
-  
-  `GNP(T) = GDP(T) + NFP(T)`
 
-  - **NFP(T)**: Net factor payments from ROW to HC.
-
----
-
-.center[<img src="p6.png" height="70%" width="70%">]
-
----
-
-.center[<img src="p5.png" height="70%" width="70%">]
-[Link](https://www.thebalancemoney.com/what-is-the-gross-national-product-3305847)
-.small[Source: the balance]
-
----
-
-# National Income Accounting Identity
-
-- National Income Accounting Identity:
-  
-  `GDP(T) = C(T) + I(T) + G(T) + NE(T)`
-
-- Key Terms:
-  - **C(T)**: Consumption Expenditure
-  - **I(T)**: Investment Expenditure
-  - **G(T)**: Government Expenditure
-  - **NE(T)**: Net Exports (EX - IM)
-
----
-
-# Example of GNP and GDP Calculation
-
-- Suppose a country produces:
-  - $100 million worth of goods/services domestically (GDP)
-  - $20 million received as income from abroad
-  - $10 million paid to foreign factors
-
-- GNP Calculation:
-
-  `GNP = 100 + (20 - 10) = 110 million`
-
----
-
-# Balance of Payments: Definition and Structure
-
-- BOP Accounts:
-
-  1. Current Account (CA): Net exports, factor income, transfers
-  2. Capital and Financial Account (KFA): Asset transfers and financial transactions
-  3. Official Reserve Transactions
-
-- BOP Identity:
-  
-  `BOP = CA + KFA`
-
----
-
-.center[<img src="p7.png" height="80%" width="80%">]
-
----
-
-# Role of the International Monetary Fund (IMF)
-
-- Established in 1944 as part of the Bretton Woods Agreement
-
-- Key Functions:
-  - Promote international monetary cooperation
-  - Provide financial stability
-  - Offer financial assistance to member countries
-  - Monitor economic policies and provide technical assistance
-
-.center[<img src="p8.png" height="50%" width="50%">]
-
-  [Link](https://www.imf.org/en/About/Factsheets/IMF-at-a-Glance)
-
----
-
-# IMF Controversies and Criticism
-
-- Criticisms of IMF Interventions:
-  - Potential inflationary impact
-  - Moral hazard concerns
-  - Perceived economic imperialism
-
-- Discuss: Do you agree with these criticisms? Why or why not?
-
----
-
-# Conclusion
-
-- National Income and Product Accounting is essential for understanding a country's economic performance in a global context.
-
-- The Balance of Payments provides insight into a country's financial position relative to the world.
-
-- The IMF plays a critical role in maintaining international financial stability.
 
 
 ---
 
 class: inverse, center, middle
 
-# 3. Class Activity
+# 2. Class Activity
 
 ---
 
@@ -434,8 +318,7 @@ class: inverse, center, middle
 
 # Next Class
 
-- (May 16) 
-  - **Chap 20.** Quantity Theory, Inflation, and the Demand for Money     
+- (May 23) 
   - **Chap 23.** Aggregate Demand and Supply Analysis 
 
 

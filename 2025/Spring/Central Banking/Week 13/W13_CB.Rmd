@@ -1,0 +1,261 @@
+---
+title: "Central Banking"
+subtitle: "<br/>Week 13: Global Coordination and Central Banking" 
+author: "Iegor Vyshnevskyi, Ph.D."
+institute: "Sogang University"
+date: "May 28, 2025"
+output:
+  xaringan::moon_reader:
+    #css: [default, metropolis, metropolis-fonts]
+    css: xaringan-themer.css
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+<style>
+@media print{
+  body, html, .remark-slides-area, .remark-notes-area {
+    height: 100% !important;
+    width: 100% !important;
+    overflow: visible;
+    display: inline-block;
+    }
+</style>
+
+<style type="text/css">
+.remark-slide-content {
+    font-size: 38px;
+    padding: 1em 4em 1em 4em;
+}
+</style>
+
+<style type="text/css">
+.my-one-page-font {
+  font-size: 32px;
+}
+</style>
+
+</style>
+
+<style type="text/css">
+.my-one-page-font-table {
+  font-size: 28px;
+}
+</style>
+
+
+```{r setup, include = FALSE}
+library(tidyverse)
+library(knitr)
+
+opts_chunk$set(fig.width = 10, 
+               message = FALSE, 
+               warning = FALSE,
+               echo = FALSE)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+#install.packages("xaringanthemer")
+library(xaringanthemer)
+style_mono_accent(
+  base_color = "#135978", # #1c5253 #135978
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Montserrat", "500", "550i"),
+  code_font_google   = google_font("Fira Mono"),
+  colors = c(
+  red = "#f34213",
+  purple = "#3e2f5b",
+  orange = "#ff8811",
+  green = "#136f63",
+  white = "#FFFFFF"
+)
+)
+```
+
+# Agenda  
+
+1. Global Coordination and Central Banking
+
+2. Class Activity
+
+---
+
+class: inverse, center, middle
+
+# 1. Global Coordination and Central Banking
+
+---
+
+# Introduction
+
+- Central banks increasingly operate in a globalized financial system, requiring coordination and cooperation.
+
+- This lecture will cover:
+  - The evolution of central bank coordination from the Bretton Woods era to the present.
+  - The key frameworks and institutions supporting central bank cooperation.
+  - The role of the ECB, BIS, IMF, and G20 in international coordination.
+  - Real-world examples of cross-border policy alignment.
+  - Challenges and implications for monetary policy and financial stability.
+
+---
+
+# Why Global Coordination?
+
+- Mitigating spillover effects from major economies.
+
+- Coordinating monetary policies to prevent financial crises.
+
+- Harmonizing regulatory frameworks to reduce systemic risks.
+
+- Facilitating crisis response through cross-border liquidity support.
+
+- Addressing global financial imbalances through coordinated interventions.
+
+---
+
+# Historical Evolution of Central Bank Coordination
+
+- **Bretton Woods (1944):** Establishment of the IMF and World Bank to stabilize exchange rates and provide financial assistance.
+
+- **Plaza Accord (1985):** Coordinated intervention to devalue the US dollar.
+
+- **Asian Financial Crisis (1997-1998):** IMF-led stabilization packages and coordinated monetary policy.
+
+- **Global Financial Crisis (2008):** Central bank swap lines to provide liquidity.
+
+- **COVID-19 Pandemic (2020):** Joint monetary and fiscal interventions.
+
+- **Current Trends (2025):** Focus on digital currencies, climate risks, trade tariffs and cybersecurity.
+
+---
+
+# Key Institutions and Frameworks
+
+- **BIS ([Bank for International Settlements](https://www.bis.org/about/index.htm?m=2)):** Platform for global monetary and financial [cooperation](https://www.bis.org/topic/green_finance/cooperation.htm).
+
+- **IMF ([International Monetary Fund](https://www.imf.org/en/About/Factsheets/IMF-at-a-Glance)):** Provides financial stability and crisis intervention.
+
+- **Largest economies CBs** (e.g., Fed, ECB, BoJ): Coordinates with G20 and emerging markets.
+
+- **[G20](https://g20.org/about-g20/overview/):** Platform for policy discussions among major economies.
+
+- **FSB ([Financial Stability Board](https://www.fsb.org/about/)):** Monitors and makes recommendations for global financial stability.
+
+---
+
+# Case Study: ECB’s International Cooperation Activities
+
+- Focus on:
+  - **G20 Emerging Markets:** Technical assistance and policy advisory.
+  - **EU Candidate Countries:** Strengthening central banking frameworks.
+  - **Regional Institutions:** Promoting regional financial stability.
+
+- Activities include:
+  - Workshops, expert visits, joint research.
+  - Staff secondments and training programs.
+
+---
+
+# Case Study: Global Liquidity Swaps (BIS 2022)
+
+- Following the 2008 crisis, major central banks established swap lines to provide USD liquidity.
+
+- Central banks involved:
+  - Federal Reserve, ECB, BoJ, Bank of England, SNB.
+
+- Objective: Mitigate USD funding pressures and prevent market disruptions.
+
+---
+
+# Challenges in International Coordination
+
+- **Policy Divergence:** Differing monetary policy goals across regions.
+
+- **Data Sharing:** Data privacy concerns limit cross-border cooperation.
+
+- **Exchange Rate Management:** Conflicts between floating and fixed regimes.
+
+- **Cybersecurity Risks:** Cross-border payment systems vulnerable to attacks.
+
+---
+
+# Current Trends in Central Bank Cooperation
+
+- Rise of **digital currencies and payment systems.**
+
+- Focus on **green finance and climate-related risks.**
+
+- Addressing **cybersecurity risks in interconnected financial networks.**
+
+- Enhancing cross-border payment systems.
+
+---
+
+# Conclusion
+
+- Global coordination is vital to ensuring financial stability in a globalized financial system.
+
+- Institutions like the BIS, IMF, and ECB play key roles in harmonizing monetary policies.
+
+- The rise of digital currencies, climate risks, and cybersecurity challenges will shape future coordination efforts.
+
+- Ongoing challenges include policy divergence, data sharing, and geopolitical tensions.
+
+---
+
+
+class: inverse, center, middle
+
+# 2. In-class Group Activity
+
+---
+
+class: inverse, center, middle
+
+# Any QUESTIONS?
+
+**Let’s build central banks that serves growth, stability & people.**
+
+## Thank You!  
+
+
+---
+
+# Next Class
+
+-(June 04) Future Challenges for Central Banks  
+      - The readings will be posted on the Cyber Campus website.
+
+# We expect to have a guest speaker from the National bank of Ukraine.
+
+
+???
+
+1. To print pdf slides
+https://stackoverflow.com/questions/54968311/xaringan-export-slides-to-pdf-while-preserving-formatting
+
+pagedown::chrome_print("W1_ME.html") # but not all pictures are visible
+
+2. Option: https://stackoverflow.com/questions/54968311/xaringan-export-slides-to-pdf-while-preserving-formatting
+
+install.packages("remotes")
+remotes::install_github("jhelvy/xaringanBuilder")
+remotes::install_github("jhelvy/renderthis@v0.0.9")
+
+library(xaringanBuilder)
+build_pdf("DVC.html")
+
+3. Option
+writeBin(as.raw(c()), "favicon.ico") # create an empty favicon.ico file
+install.packages("renderthis")
+remotes::install_github('rstudio/chromote')
+library(renderthis)
+
+renderthis::to_pdf("W13_CB.html")
+
+getwd()
+setwd("C:/Users/Iegor/OneDrive - kdis.ac.kr/Documents/GitHub/Sogang/2025/Spring/Central Banking/Week 13")
