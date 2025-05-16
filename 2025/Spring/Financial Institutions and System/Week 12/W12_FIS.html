@@ -1,23 +1,37 @@
----
-title: "Financial Institutions and System"
-subtitle: "<br/>Week 12: Quantity Theory, Inflation, and the Demand for Money."
-author: "Iegor Vyshnevskyi, Ph.D."
-institute: "Sogang University"
-date: "May 23, 2025"
-output:
-  xaringan::moon_reader:
-    #css: [default, metropolis, metropolis-fonts]
-    css: xaringan-themer.css
-    lib_dir: libs
-    nature:
-      highlightStyle: github
-      highlightLines: true
-      countIncrementalSlides: false
-      ratio: '16:9'
-mathjax: default
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Financial Institutions and System</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Iegor Vyshnevskyi, Ph.D." />
+    <meta name="date" content="2025-05-23" />
+    <script src="libs/header-attrs-2.28/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Financial Institutions and System
+]
+.subtitle[
+## <br/>Week 12: Quantity Theory, Inflation, and the Demand for Money.
+]
+.author[
+### Iegor Vyshnevskyi, Ph.D.
+]
+.institute[
+### Sogang University
+]
+.date[
+### May 23, 2025
+]
+
 ---
 
-<style>
+
+&lt;style&gt;
 @media print{
   body, html, .remark-slides-area, .remark-notes-area {
     height: 100% !important;
@@ -25,57 +39,33 @@ mathjax: default
     overflow: visible;
     display: inline-block;
     }
-</style>
+&lt;/style&gt;
 
-<style type="text/css">
+&lt;style type="text/css"&gt;
 .remark-slide-content {
     font-size: 38px;
     padding: 1em 4em 1em 4em;
 }
-</style>
+&lt;/style&gt;
 
-<style type="text/css">
+&lt;style type="text/css"&gt;
 .my-one-page-font {
   font-size: 32px;
 }
-</style>
+&lt;/style&gt;
 
-</style>
+&lt;/style&gt;
 
-<style type="text/css">
+&lt;style type="text/css"&gt;
 .my-one-page-font-table {
   font-size: 28px;
 }
-</style>
+&lt;/style&gt;
 
 
-```{r setup, include = FALSE}
-library(tidyverse)
-library(knitr)
 
-opts_chunk$set(fig.width = 10, 
-               message = FALSE, 
-               warning = FALSE,
-               echo = FALSE)
-```
 
-```{r xaringan-themer, include=FALSE, warning=FALSE}
-#install.packages("xaringanthemer")
-library(xaringanthemer)
-style_mono_accent(
-  base_color = "#135978", # #1c5253
-  header_font_google = google_font("Josefin Sans"),
-  text_font_google   = google_font("Montserrat", "500", "550i"),
-  code_font_google   = google_font("Fira Mono"),
-  colors = c(
-  red = "#f34213",
-  purple = "#3e2f5b",
-  orange = "#ff8811",
-  green = "#136f63",
-  white = "#FFFFFF"
-)
-)
-```
+
 
 # Agenda  
 
@@ -117,7 +107,7 @@ $$ M \times V = P \times Y $$, where money supply times velocity equals nominal 
 **Example:**
 - Nominal GDP = $15 trillion
 - Money Supply = $3 trillion
-- Velocity (V) = $PY / M$ = 15 / 3 = 5
+- Velocity (V) = `\(PY / M\)` = 15 / 3 = 5
 
 
 
@@ -163,12 +153,12 @@ $$ M = \frac{P \times Y}{V} $$
 
 - Applying the percentage change formula:
 
-$\pi = \%\Delta M - \%\Delta Y$
+`\(\pi = \%\Delta M - \%\Delta Y\)`
 
-- If velocity is constant, a 10% increase in the money supply $%ΔM=10%$ leads to a 10% increase in nominal GDP (PY). 
-How this increase is divided between inflation $\pi=\%\Delta P$ and real output $\%\Delta Y$ depends on the state of the economy:
+- If velocity is constant, a 10% increase in the money supply `\(%ΔM=10%\)` leads to a 10% increase in nominal GDP (PY). 
+How this increase is divided between inflation `\(\pi=\%\Delta P\)` and real output `\(\%\Delta Y\)` depends on the state of the economy:
   - At full employment, the increase manifests entirely as inflation.
-  - Below full employment, some of the increase contributes to economic growth $\%\Delta Y$.
+  - Below full employment, some of the increase contributes to economic growth `\(\%\Delta Y\)`.
 
 - This relationship highlights the importance of controlling the money supply for price stability, a key responsibility of central banks.
 
@@ -186,10 +176,10 @@ class: my-one-page-font
 - The demand for money can be represented by the following equation:
 $$ M_d = f(1/V, Y, P) $$
 - Where:
-  - $M_d$ = demand for money
-  - $V$ = velocity of money
-  - $Y$ = income level
-  - $P$ = price level
+  - `\(M_d\)` = demand for money
+  - `\(V\)` = velocity of money
+  - `\(Y\)` = income level
+  - `\(P\)` = price level
 
 ---
 
@@ -197,7 +187,7 @@ $$ M_d = f(1/V, Y, P) $$
 
 - In the long run, empirical evidence supports the classical quantity theory of money both in the U.S. and across countries.
 
-.center[<img src="p3.png" height="50%" width="50%">]
+.center[&lt;img src="p3.png" height="50%" width="50%"&gt;]
 .small[Source: Mishkin, 13 ed.]
 
 ---
@@ -206,7 +196,7 @@ $$ M_d = f(1/V, Y, P) $$
 
 - In the long run, empirical evidence supports the classical quantity theory of money both in the U.S. and across countries.
 
-.center[<img src="p4.png" height="5%" width="50%">]
+.center[&lt;img src="p4.png" height="5%" width="50%"&gt;]
 .small[Source: Mishkin, 13 ed.]
 
 ---
@@ -215,7 +205,7 @@ $$ M_d = f(1/V, Y, P) $$
 
 - In the short run, empirical evidence does not support the classical quantity theory of money.
 
-.center[<img src="p5.png" height="50%" width="50%">]
+.center[&lt;img src="p5.png" height="50%" width="50%"&gt;]
 .small[Source: Mishkin, 13 ed.]
 
 - The empirical evidence indicates the classical quantity theory of money is a good theory for inflation in the long run but not in the short run.
@@ -231,9 +221,9 @@ class: my-one-page-font
   - Precautionary Motive
   - Speculative Motive
 
-- Money demand: $M_d = f(i, Y)$  
+- Money demand: `\(M_d = f(i, Y)\)`  
 
-- Real money demand function: $\frac{MD}{P} = L(Y, R)$
+- Real money demand function: `\(\frac{MD}{P} = L(Y, R)\)`
 
 - Money demand is inversely related to interest rates and positively related to income.
 
@@ -288,10 +278,10 @@ $$ \%P = \%M - \%Y $$
 - Government budget deficit: BD = G - T
 - Financing deficit through bond issuance or increasing monetary base:
 
-$BD = \Delta B + \Delta MB$, where:
-  - $BD$ = budget deficit
-  - $\Delta B$ = change in bonds
-  - $\Delta MB$ = change in monetary base
+`\(BD = \Delta B + \Delta MB\)`, where:
+  - `\(BD\)` = budget deficit
+  - `\(\Delta B\)` = change in bonds
+  - `\(\Delta MB\)` = change in monetary base
 
 - Persistent monetization of debt can lead to hyperinflation.
 
@@ -316,19 +306,19 @@ $BD = \Delta B + \Delta MB$, where:
 
 # Summary of Key Concepts
 
-- Quantity Theory of Money: $MV = PY$
+- Quantity Theory of Money: `\(MV = PY\)`
 
 - Determinants of Money Velocity: Payment technologies, financial innovations, economic conditions
 
-- Demand for Money: $M_d = f(1/V, Y, P)$
+- Demand for Money: `\(M_d = f(1/V, Y, P)\)`
 
 - Keynesian Theories: Transactions, precautionary, and speculative motives
 
-- Fisher Equation: $M = \frac{P \times Y}{V}$
+- Fisher Equation: `\(M = \frac{P \times Y}{V}\)`
 
 - Portfolio Theories: Wealth, risk, liquidity of other assets
 
-- Inflation and Quantity Theory: $\%M + \%V = \%P + \%Y$
+- Inflation and Quantity Theory: `\(\%M + \%V = \%P + \%Y\)`
 
 - Budget Deficits and Inflation: Financing through taxation, borrowing, or money creation
 
@@ -380,3 +370,140 @@ renderthis::to_pdf("W12_FIS.html")
 
 getwd()
 setwd("C:/Users/Iegor/OneDrive - kdis.ac.kr/Documents/GitHub/Sogang/2025/Spring/Financial Institutions and System/Week 12")
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

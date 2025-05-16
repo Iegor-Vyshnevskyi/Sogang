@@ -342,23 +342,60 @@ Rewriting the equations:
 
 3. `\(Q_1 + Q_2 = 15\)`
 
-Adding the first two equations to eliminate `\(\lambda\)`:
+**Step 1: Isolate \(\lambda\)**
 
-$$
-60 - 4Q_1 = 0 \implies Q_1 = 10
-$$
+From equation (1):
 
-Substituting in the constraint:
+`\(\lambda = 40 - 2Q_1 + 2Q_2\)`
 
-$$
-10 + Q_2 = 15 \implies Q_2 = 5
-$$
+From equation (2):
 
-Optimal output levels: `\(Q_1 = 10\)`, `\(Q_2 = 5\)`
+`\(\lambda = 20 + 2Q_1 - 2Q_2\)`
+---
+
+# Step 3: Solving the System (continued)
+
+Setting them equal:
+
+`\(40 - 2Q_1 + 2Q_2 = 20 + 2Q_1 - 2Q_2\)`
+
+Combine and simplify:
+
+`\(20 = 4Q_1 - 4Q_2\)`
+
+Divide by 4:
+
+`\(5 = Q_1 - Q_2\)`
 
 ---
 
-# Step 4: Profit Calculation
+# Step 3: Solving the System (continued)
+
+
+Now, we have two equations:
+
+1. `\(Q_1 - Q_2 = 5\)`  
+2. `\(Q_1 + Q_2 = 15\)`  
+
+Adding the two equations:
+
+`\(2Q_1 = 20 \implies Q_1 = 10\)`
+
+Substitute `\(Q_1 = 10\)` in the second equation:
+
+`\(10 + Q_2 = 15 \implies Q_2 = 5\)`
+
+---
+
+# Step 4: Calculate `\(\lambda\)`
+
+Substituting `\(Q_1 = 10\)` and `\(Q_2 = 5\)`:
+
+`\(\lambda = 40 - 2(10) + 2(5) = 30\)`
+
+---
+
+# Step 5: Profit Calculation
 
 Substitute `\(Q_1 = 10\)`, `\(Q_2 = 5\)` in the profit function:
 
@@ -369,6 +406,8 @@ $$
 $$
 \pi = 400 - 100 + 100 + 100 - 25 = 475
 $$
+
+**Optimal Profit:** 475 units.
 
 ---
 
@@ -384,7 +423,7 @@ $$
 
 # Your turn
 
-# Practice Problem 1: Maximizing $ 2x^2 - xy $
+# Practice Problem 1: Maximizing `\(2x^2 - xy\)`
 
 
 Use Lagrange multipliers to optimise
