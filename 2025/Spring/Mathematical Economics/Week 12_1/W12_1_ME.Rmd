@@ -378,23 +378,164 @@ class: inverse, center, middle
 ---
 
 
+# Math Battle: Indefinite Integrals
+
+**Objective:** Apply indefinite integration concepts to solve economic problems.  
+**Format:** 4 groups, 4 students each. Each group receives a distinct problem.  
+**Time:** 20 minutes to solve, 5 minutes to present.
+
+### Math Battle Rules:
+
+- Each group presents their solutions. 
+- Other groups can challenge the solution if they find discrepancies.
+- Correct challenges earn 2 points; incorrect challenges lose 1 point.
+- Winning group gets a prize!
+
+---
+
+# Group 1: Marginal Cost Analysis
+
+A firm’s marginal cost function is given by:
+
+$$ MC(x) = 15x^2 - 40 $$
+
+1. Determine the total cost function by integrating the MC function.
+
+2. Identify the constant of integration given that the fixed cost is $120.
+
+---
+
+# Group 2: Consumption and Savings
+
+The marginal propensity to save is given by:
+
+$$ MPS = 0.2x - 0.05 $$
+
+1. Integrate the MPS to find the savings function.
+
+2. If the initial savings is $50, determine the complete savings function.
+
+---
+
+# Group 3: Investment Accumulation
+
+A firm invests $200 annually in a project, and the marginal investment function is given by:
+
+$$ MI(t) = 200 e^{0.03t} $$
+
+1. Integrate to find the total investment function.
+
+2. Determine the accumulated investment after 5 years.
+
+---
+
+# Group 4: Demand Function Analysis
+
+A product’s marginal demand function is given by:
+
+$$ MD(Q) = -3Q^2 + 12Q - 5 $$
+
+1. Integrate to find the demand function.
+
+2. Determine the constant of integration if the initial demand is $50.
+
+???
 
 
 
+# Group 1: Cost Analysis - Solutions
 
+### Problem:
+Integrate the marginal cost function to find the total cost function.
 
+**Given:** \( MC(x) = 12x^2 - 5x + 3 \)
 
+**Solution:**
 
+\[\int (12x^2 - 5x + 3) \, dx = \int 12x^2 \, dx - \int 5x \, dx + \int 3 \, dx\]
 
+\[\int 12x^2 \, dx = 12 \cdot rac{x^3}{3} = 4x^3\]
 
+\[\int -5x \, dx = -5 \cdot rac{x^2}{2} = -rac{5x^2}{2}\]
 
+\[\int 3 \, dx = 3x\]
 
+**Total Cost Function:**
 
+\[	ext{TC}(x) = 4x^3 - rac{5x^2}{2} + 3x + C\]
 
+#---
 
+# Group 2: Consumption Analysis - Solutions
+
+### Problem:
+Find the consumption function given the MPC and initial consumption.
+
+**Given:** \( MPC = 0.75 \), Initial consumption = 120
+
+**Solution:**
+
+Marginal Propensity to Consume:
+
+\[\int MPC \, dY = \int 0.75 \, dY\]
+
+\[	ext{C}(Y) = 0.75Y + C\]
+
+**Finding the Constant \( C \):**
+
+At \( Y = 0 \), \( C = 120 \).
+
+**Consumption Function:**
+
+\[	ext{C}(Y) = 0.75Y + 120\]
+
+#---
+
+# Group 3: Revenue Analysis - Solutions
+
+### Problem:
+Integrate the marginal revenue function to find the total revenue function.
+
+**Given:** \( MR(x) = 20x - 3 \)
+
+**Solution:**
+
+\[\int (20x - 3) \, dx = \int 20x \, dx - \int 3 \, dx\]
+
+\[\int 20x \, dx = 20 \cdot rac{x^2}{2} = 10x^2\]
+
+\[\int -3 \, dx = -3x\]
+
+**Total Revenue Function:**
+
+\[	ext{TR}(x) = 10x^2 - 3x + C\]
+
+#---
+
+# Group 4: Demand Analysis - Solutions
+
+### Problem:
+Find the demand function given the marginal demand function.
+
+**Given:** \( MD(Q) = -4Q + 15 \)
+
+**Solution:**
+
+\[\int (-4Q + 15) \, dQ = \int -4Q \, dQ + \int 15 \, dQ\]
+
+\[\int -4Q \, dQ = -4 \cdot rac{Q^2}{2} = -2Q^2\]
+
+\[\int 15 \, dQ = 15Q\]
+
+**Demand Function:**
+
+\[	ext{D}(Q) = -2Q^2 + 15Q + C\]
+
+#---
 
 
 ---
+
 
 
 class: inverse, center, middle
