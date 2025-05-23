@@ -351,7 +351,7 @@ class: inverse, center, middle
 # Next Class
 
 - (May 30) 
-  - FinTech and Financial Institutions
+  - ESG and Sustainable Finance: The Role of Financial Institutions in Promoting Sustainability
   - Reading will be assigned
 
 
