@@ -319,7 +319,7 @@ class: inverse, center, middle
 
 class: my-one-page-font
 
-# Guest Profile: Vasyl Boryshchuk {.smaller}
+# Guest Profile: Vasyl Boryshchuk
 
 .pull-left[
 ### Vasyl Boryshchuk

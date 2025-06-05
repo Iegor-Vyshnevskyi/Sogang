@@ -1,9 +1,9 @@
 ---
 title: "Mathematical Methods for International Commerce "
-subtitle: "<br/>Week 14/1: Cramer’s Rule (7.3)"
+subtitle: "<br/>Week 14/1-14/2: Cramer’s Rule (7.3)"
 author: "Iegor Vyshnevskyi, Ph.D."
 institute: "Sogang University"
-date: "June 04, 2025"
+date: "June 04/06, 2025"
 output:
   xaringan::moon_reader:
     #css: [default, metropolis, metropolis-fonts]
