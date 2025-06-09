@@ -81,7 +81,7 @@ style_mono_accent(
 
 1. Linear Programming (8.1)
 
-2. Group activity: 
+2. Group activity
 
 3. Homework #2
 
@@ -251,56 +251,52 @@ The **feasible region** is the unshaded area satisfying all inequalities.
 
 We now introduce a linear programming objective:
 
-**Minimize** \( -x + y \)
+**Minimize** $-x + y$
 
 Subject to:
-- \( 3x + 4y \leq 12 \)
-- \( x \geq 0 \)
-- \( y \geq 0 \)
+- $3x + 4y \leq 12$
+- $x \geq 0$
+- $y \geq 0$
 
 (a) Sketch the feasible region.
-(b) Sketch, on the same diagram, the five lines
-$y = x + c$ for \( c = -4, -2, 0, 1, 3 \).
-*Hint: Each line $y = x + c$ has slope 1 and passes through $(0, c)$ and $(-c, 0)$.*
+
+(b) Sketch, on the same diagram, the five lines $y = x + c$ for $c = -4, -2, 0, 1, 3$.
+  *Hint: Each line $y = x + c$ has slope 1 and passes through $(0, c)$ and $(-c, 0)$.*
+
 (c) Use your answers to part (b) to solve the given linear programming problem.
 
 ---
 
-This corresponds to **lines of constant objective**:
-\[ -2x + y = c \Rightarrow y = 2x + c \]
-
-These lines are **parallel**, slope = 2, and shift with \( c \)
-
----
-
 ## Sweep Method with Objective Lines
+This corresponds to **lines of constant objective**:
+$-2x + y = c \Rightarrow y = 2x + c$
 
-As \( c \) decreases, lines move across feasible region.
+These lines are **parallel**, slope = 2, and shift with $c$
 
-We are looking for the smallest \( c \) such that the line still touches the feasible region.
+As $c$ decreases, lines move across feasible region.
+
+We are looking for the smallest $c$ such that the line still touches the feasible region.
 
 That line will be tangent at the **optimal solution**.
 
-![Sweeping lines for different c](p8.png)
+Minimum occurs at point $(12, 0)$
+- Check: $-2(12) + 0 = -24$
 
-Minimum occurs at point \( (12, 0) \)
-- Check: \( -2(12) + 0 = -24 \)
+Hence, the **minimum** value is **$-24$** at $(12, 0)$
 
-Hence, the **minimum** value is **\( -24 \)** at \( (12, 0) \)
+---
+
+.center[<img src="p8.png" height="90%" width="90%">]
 
 ---
 
 ## Objective Values at the Corners
 
-We evaluate the objective \( -2x + y \) at corners of feasible region:
+We evaluate the objective $-2x + y$ at corners of feasible region:
 
-![Corner Evaluations](p9.png)
+.center[<img src="p9.png" height="50%" width="50%">]
 
-Minimum = **−24** at \( (12, 0) \), Maximum = **3** at \( (0, 3) \)
-
----
-
-
+Minimum = **−24** at $(12, 0)$, Maximum = **3** at $(0, 3)$
 
 ---
 
@@ -321,31 +317,7 @@ x, y &\geq 0
 
 ## Step 1: Plot Constraints
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
-library(ggplot2)
-library(dplyr)
-
-# Create data frame for plotting
-x <- seq(0, 6, length.out = 100)
-df <- data.frame(
-  x = x,
-  y1 = 4 - x,
-  y2 = 6 - 2*x
-)
-
-# Define colors for constraint lines
-constraint_color_1 <- "#1f77b4" # Blue
-constraint_color_2 <- "#d62728" # Red
-
-ggplot(df, aes(x = x)) +
-  geom_line(aes(y = y1), color = constraint_color_1) +
-  geom_line(aes(y = y2), color = constraint_color_2) +
-  annotate("text", x = 2, y = 2.5, label = "x + y <= 4", color = constraint_color_1) +
-  annotate("text", x = 1, y = 5, label = "2x + y <= 6", color = constraint_color_2) +
-  coord_cartesian(xlim = c(0, 6), ylim = c(0, 6)) +
-  labs(title = "Constraint Lines", x = "x", y = "y") +
-  theme_minimal()
-```
+.center[<img src="p10.png" height="50%" width="50%">]
 
 ---
 
@@ -364,7 +336,7 @@ Evaluate $Z = 5x + 3y$ at each:
 |-----------|---------|
 | (0,0)     | 0       |
 | (0,4)     | 12      |
-| (2,2)     | 16      |  ⬅️ Max
+| (2,2)     | 16      |  $\Leftarrow$ Max
 | (3,0)     | 15      |
 
 ---
@@ -428,13 +400,9 @@ x, y &\geq 0
 - Special cases include infeasibility, infinite solutions, and unbounded solutions
 
 ---
-
-
-
----
 class: inverse, center, middle
 
-# 2. Group activity: Solving matrixes
+# 2. Group activity
 ---
 
 ---
@@ -488,7 +456,7 @@ class: inverse, center, middle
 
 ## Next Classes
 
-- (June 6: Recorded lecture) Linear Programming (8.1)  
+- (June 14) Applications of Linear Programming (8.2)   
 
 
 ???
